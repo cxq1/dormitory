@@ -1,0 +1,832 @@
+2020-02-08 13:45:31.467 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 7290 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 13:45:31.477 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 13:45:31.541 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-08 13:45:32.323 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-02-08 13:45:32.348 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Started DormitoryApplication in 1.806 seconds (JVM running for 3.24)
+2020-02-08 13:46:59.682 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 7448 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 13:46:59.685 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 13:46:59.747 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-08 13:47:00.658 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-02-08 13:47:00.699 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Started DormitoryApplication in 1.655 seconds (JVM running for 2.701)
+2020-02-08 13:55:18.998 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 8412 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 13:55:19.019 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 13:55:19.100 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-08 13:55:19.933 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-02-08 13:55:19.963 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Started DormitoryApplication in 1.97 seconds (JVM running for 4.197)
+2020-02-08 13:58:11.667 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 8707 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 13:58:11.672 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 13:58:11.804 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-08 13:58:12.622 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-02-08 13:58:12.660 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Started DormitoryApplication in 1.672 seconds (JVM running for 3.099)
+2020-02-08 14:06:51.637 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 9868 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 14:06:51.642 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 14:06:51.701 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-08 14:06:51.701 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-08 14:06:52.976 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 14:06:52.996 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:06:53.011 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 14:06:53.011 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 14:06:53.102 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 14:06:53.103 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1401 ms
+2020-02-08 14:06:53.365 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:06:53.557 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-08 14:06:54.646 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:06:54.650 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-02-08 14:06:54.673 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-08 14:08:36.989 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 10051 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 14:08:36.993 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 14:08:37.122 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-08 14:08:37.123 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-08 14:08:38.411 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 14:08:38.427 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:08:38.436 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 14:08:38.437 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 14:08:38.520 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 14:08:38.520 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1397 ms
+2020-02-08 14:08:38.740 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:08:38.922 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-08 14:08:40.021 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:08:40.024 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-02-08 14:08:40.036 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-08 14:09:27.327 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 10227 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 14:09:27.334 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 14:09:27.402 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-08 14:09:27.402 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-08 14:09:29.022 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 14:09:29.044 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:09:29.061 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 14:09:29.062 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 14:09:29.186 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 14:09:29.189 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1786 ms
+2020-02-08 14:09:29.433 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:09:29.670 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-08 14:09:39.773 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:09:39.776 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-02-08 14:09:39.792 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-08 14:09:52.218 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 10385 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 14:09:52.222 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 14:09:52.335 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-08 14:09:52.336 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-08 14:09:53.786 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 14:09:53.803 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:09:53.816 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 14:09:53.816 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 14:09:53.901 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 14:09:53.901 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1564 ms
+2020-02-08 14:09:54.137 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:09:54.329 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-08 14:09:55.430 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:09:55.432 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-02-08 14:09:55.497 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-08 14:14:34.904 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 10814 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 14:14:34.907 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 14:14:35.019 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-08 14:14:35.023 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-08 14:14:36.476 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 14:14:36.493 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:14:36.517 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 14:14:36.517 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 14:14:36.601 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 14:14:36.602 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1579 ms
+2020-02-08 14:14:36.869 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:14:37.073 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-08 14:14:38.184 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:14:38.186 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-02-08 14:14:38.199 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-08 14:16:16.997 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 11015 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 14:16:17.006 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 14:16:17.089 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-08 14:16:17.090 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-08 14:16:18.460 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 14:16:18.475 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:16:18.488 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 14:16:18.489 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 14:16:18.589 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 14:16:18.590 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1500 ms
+2020-02-08 14:16:18.829 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:16:19.011 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-08 14:16:20.117 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:16:20.120 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-02-08 14:16:20.132 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-08 14:17:41.244 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 11184 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 14:17:41.249 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 14:17:41.343 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-08 14:17:41.344 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-08 14:17:43.062 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 14:17:43.081 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:17:43.096 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 14:17:43.097 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 14:17:43.196 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 14:17:43.197 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1853 ms
+2020-02-08 14:17:43.432 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:17:43.643 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-08 14:17:44.739 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:17:44.742 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-02-08 14:17:44.755 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-08 14:25:27.606 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 11837 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 14:25:27.625 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 14:25:27.880 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-08 14:25:27.881 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-08 14:25:29.814 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 14:25:29.850 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:25:29.872 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 14:25:29.872 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 14:25:30.007 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 14:25:30.008 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2126 ms
+2020-02-08 14:25:30.447 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:25:30.787 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-08 14:25:31.975 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:25:31.987 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-02-08 14:25:32.005 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-08 14:26:56.586 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 12091 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 14:26:56.591 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 14:26:56.727 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-08 14:26:56.727 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-08 14:26:58.980 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 14:26:59.005 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:26:59.025 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 14:26:59.026 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 14:26:59.235 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 14:26:59.236 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2509 ms
+2020-02-08 14:26:59.543 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:26:59.873 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-08 14:27:01.042 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:27:01.050 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-02-08 14:27:01.073 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-08 14:30:07.233 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 12408 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 14:30:07.244 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 14:30:07.329 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-08 14:30:07.330 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-08 14:30:09.117 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 14:30:09.146 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:30:09.171 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 14:30:09.172 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 14:30:09.370 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 14:30:09.371 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2041 ms
+2020-02-08 14:30:09.755 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:30:10.038 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-08 14:30:11.214 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:30:11.226 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-02-08 14:30:11.256 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-08 14:32:02.625 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 12646 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 14:32:02.636 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 14:32:02.850 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-08 14:32:02.851 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-08 14:32:04.646 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 14:32:04.674 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:32:04.691 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 14:32:04.692 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 14:32:04.802 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 14:32:04.804 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1952 ms
+2020-02-08 14:32:05.238 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:32:05.506 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-08 14:32:06.622 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:32:06.626 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-02-08 14:32:06.644 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-08 14:32:49.700 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 12789 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 14:32:49.704 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 14:32:49.819 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-08 14:32:49.820 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-08 14:32:51.622 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 14:32:51.641 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:32:51.653 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 14:32:51.654 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 14:32:51.744 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 14:32:51.745 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1925 ms
+2020-02-08 14:32:52.027 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:32:52.248 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-08 14:32:53.375 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:32:53.378 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-02-08 14:32:53.397 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-08 14:36:56.432 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 13125 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 14:36:56.441 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 14:36:56.661 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-08 14:36:56.662 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-08 14:36:58.328 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 14:36:58.352 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:36:58.364 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 14:36:58.364 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 14:36:58.489 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 14:36:58.490 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1828 ms
+2020-02-08 14:36:58.745 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:36:58.970 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-08 14:37:00.069 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:37:00.076 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-02-08 14:37:00.096 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-08 14:38:33.182 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 13310 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 14:38:33.207 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 14:38:33.332 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-08 14:38:33.333 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-08 14:38:35.275 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 14:38:35.300 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:38:35.313 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 14:38:35.313 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 14:38:35.433 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 14:38:35.433 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2100 ms
+2020-02-08 14:38:35.732 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:38:35.985 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-08 14:38:37.110 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:38:37.112 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-02-08 14:38:37.131 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-08 14:45:54.708 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 14114 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 14:45:54.713 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 14:45:54.780 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-08 14:45:54.781 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-08 14:45:56.777 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 14:45:56.815 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:45:56.847 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 14:45:56.847 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 14:45:57.127 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 14:45:57.127 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2346 ms
+2020-02-08 14:45:57.418 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:45:57.658 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-08 14:45:57.911 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-02-08 14:45:58.080 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-02-08 14:45:58.132 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:45:58.176 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2020-02-08 14:45:58.193 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Started DormitoryApplication in 4.531 seconds (JVM running for 5.802)
+2020-02-08 14:46:50.809 [http-nio-8088-exec-2] INFO  org.apache.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:414)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:294)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-02-08 14:46:50.812 [http-nio-8088-exec-1] INFO  org.apache.coyote.http11.Http11Processor - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:414)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:294)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2020-02-08 14:46:50.987 [http-nio-8088-exec-4] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-08 14:46:50.988 [http-nio-8088-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-02-08 14:46:51.007 [http-nio-8088-exec-4] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 19 ms
+2020-02-08 14:54:53.389 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-02-08 14:54:53.410 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-02-08 14:54:53.411 [Thread-5] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:54:53.708 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 14114 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 14:54:53.709 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 14:54:54.234 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 14:54:54.236 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:54:54.237 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 14:54:54.237 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 14:54:54.257 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 14:54:54.259 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 546 ms
+2020-02-08 14:54:54.412 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:54:54.514 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2020-02-08 14:54:54.540 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2020-02-08 14:54:54.605 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-02-08 14:54:54.644 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:54:54.680 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2020-02-08 14:54:54.682 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Started DormitoryApplication in 1.036 seconds (JVM running for 542.29)
+2020-02-08 14:54:54.686 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-02-08 14:54:58.467 [http-nio-8088-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-08 14:54:58.469 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-02-08 14:54:58.475 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-02-08 14:56:02.182 [Thread-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2020-02-08 14:56:02.349 [Thread-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2020-02-08 14:56:02.351 [Thread-9] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:56:02.721 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 14114 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 14:56:02.722 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 14:56:03.273 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 14:56:03.278 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:56:03.279 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 14:56:03.280 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 14:56:03.298 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 14:56:03.299 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 574 ms
+2020-02-08 14:56:03.423 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:56:03.513 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2020-02-08 14:56:03.661 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2020-02-08 14:56:03.731 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-02-08 14:56:03.751 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:56:03.770 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2020-02-08 14:56:03.771 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Started DormitoryApplication in 1.13 seconds (JVM running for 611.38)
+2020-02-08 14:56:03.776 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-02-08 14:56:06.144 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2020-02-08 14:56:06.163 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2020-02-08 14:56:06.164 [Thread-15] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:56:06.418 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 14114 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 14:56:06.419 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 14:56:06.806 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 14:56:06.807 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:56:06.808 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 14:56:06.809 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 14:56:06.820 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 14:56:06.820 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 399 ms
+2020-02-08 14:56:06.927 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:56:07.036 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2020-02-08 14:56:07.056 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2020-02-08 14:56:07.108 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-02-08 14:56:07.132 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:56:07.164 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2020-02-08 14:56:07.188 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Started DormitoryApplication in 0.885 seconds (JVM running for 614.796)
+2020-02-08 14:56:07.193 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-02-08 14:56:15.357 [http-nio-8088-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-08 14:56:15.361 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-02-08 14:56:15.374 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+2020-02-08 14:56:18.542 [Thread-26] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2020-02-08 14:56:18.599 [Thread-26] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2020-02-08 14:56:18.600 [Thread-26] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:56:23.723 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 15477 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 14:56:23.726 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 14:56:23.869 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-08 14:56:23.870 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-08 14:56:25.703 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 14:56:25.724 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:56:25.736 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 14:56:25.736 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 14:56:25.833 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 14:56:25.835 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1965 ms
+2020-02-08 14:56:26.087 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:56:26.339 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-08 14:56:26.459 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-02-08 14:56:26.641 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-02-08 14:56:26.691 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:56:26.713 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2020-02-08 14:56:26.718 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Started DormitoryApplication in 3.994 seconds (JVM running for 5.715)
+2020-02-08 14:56:31.663 [http-nio-8088-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-08 14:56:31.664 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-02-08 14:56:31.680 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+2020-02-08 14:58:06.755 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-02-08 14:58:06.802 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-02-08 14:58:06.802 [Thread-8] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:58:13.415 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 15851 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 14:58:13.421 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 14:58:13.514 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-08 14:58:13.515 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-08 14:58:15.127 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 14:58:15.142 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:58:15.153 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 14:58:15.154 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 14:58:15.238 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 14:58:15.239 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1724 ms
+2020-02-08 14:58:15.489 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:58:15.765 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-08 14:58:15.885 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-02-08 14:58:16.083 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-02-08 14:58:16.112 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:58:16.132 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2020-02-08 14:58:16.140 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Started DormitoryApplication in 3.578 seconds (JVM running for 5.317)
+2020-02-08 14:58:22.598 [http-nio-8088-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-08 14:58:22.601 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-02-08 14:58:22.632 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 31 ms
+2020-02-08 14:58:44.567 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-02-08 14:58:44.577 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-02-08 14:58:44.577 [Thread-8] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:58:50.690 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 16050 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 14:58:50.707 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 14:58:50.892 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-08 14:58:50.893 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-08 14:58:52.523 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 14:58:52.549 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:58:52.568 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 14:58:52.569 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 14:58:52.716 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 14:58:52.716 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1823 ms
+2020-02-08 14:58:53.207 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 14:58:53.581 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-08 14:58:53.874 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-02-08 14:58:54.116 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-02-08 14:58:54.173 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2020-02-08 14:58:54.205 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2020-02-08 14:58:54.214 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Started DormitoryApplication in 4.58 seconds (JVM running for 5.842)
+2020-02-08 14:58:54.660 [http-nio-8088-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-08 14:58:54.664 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-02-08 14:58:54.685 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 21 ms
+2020-02-08 15:00:01.689 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-02-08 15:00:01.709 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-02-08 15:00:01.710 [Thread-8] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 15:00:10.637 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 16392 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 15:00:10.641 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 15:00:10.718 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-08 15:00:10.719 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-08 15:00:12.177 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 15:00:12.219 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:00:12.233 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 15:00:12.233 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 15:00:12.317 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 15:00:12.317 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1598 ms
+2020-02-08 15:00:12.804 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 15:00:13.238 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-08 15:00:13.399 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-02-08 15:00:13.554 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-02-08 15:00:13.594 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:00:13.620 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2020-02-08 15:00:13.631 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Started DormitoryApplication in 4.514 seconds (JVM running for 6.68)
+2020-02-08 15:00:40.436 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-02-08 15:00:40.452 [Thread-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-02-08 15:00:40.452 [Thread-8] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 15:00:47.495 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 16558 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 15:00:47.501 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 15:00:47.588 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-08 15:00:47.589 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-08 15:00:49.736 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 15:00:49.763 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:00:49.784 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 15:00:49.785 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 15:00:49.986 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 15:00:49.989 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2400 ms
+2020-02-08 15:00:50.434 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 15:00:50.861 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-08 15:00:51.167 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-02-08 15:00:51.424 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-02-08 15:00:51.484 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:00:51.519 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2020-02-08 15:00:51.532 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Started DormitoryApplication in 5.332 seconds (JVM running for 7.187)
+2020-02-08 15:00:52.287 [http-nio-8088-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-08 15:00:52.290 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-02-08 15:00:52.301 [http-nio-8088-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2020-02-08 15:07:25.611 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-02-08 15:07:25.640 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-02-08 15:07:25.642 [Thread-5] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 15:07:26.327 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 16558 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 15:07:26.329 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 15:07:26.826 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 15:07:26.828 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:07:26.828 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 15:07:26.829 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 15:07:26.848 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 15:07:26.848 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 515 ms
+2020-02-08 15:07:26.952 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 15:07:27.044 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2020-02-08 15:07:27.110 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2020-02-08 15:07:27.201 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-02-08 15:07:27.229 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:07:27.237 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2020-02-08 15:07:27.243 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Started DormitoryApplication in 1.211 seconds (JVM running for 402.898)
+2020-02-08 15:07:27.247 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-02-08 15:09:51.939 [Thread-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2020-02-08 15:09:51.954 [Thread-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2020-02-08 15:09:51.955 [Thread-9] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 15:09:52.200 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 16558 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 15:09:52.200 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 15:09:52.629 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 15:09:52.630 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:09:52.631 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 15:09:52.632 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 15:09:52.645 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 15:09:52.645 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 442 ms
+2020-02-08 15:09:52.741 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 15:09:52.834 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2020-02-08 15:09:52.874 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2020-02-08 15:09:52.922 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-02-08 15:09:52.941 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:09:53.059 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2020-02-08 15:09:53.061 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Started DormitoryApplication in 0.925 seconds (JVM running for 548.716)
+2020-02-08 15:09:53.065 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-02-08 15:09:54.335 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2020-02-08 15:09:54.357 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2020-02-08 15:09:54.358 [Thread-15] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 15:09:54.564 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 16558 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 15:09:54.573 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 15:09:55.006 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 15:09:55.007 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:09:55.009 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 15:09:55.011 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 15:09:55.023 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 15:09:55.024 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 448 ms
+2020-02-08 15:09:55.118 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 15:09:55.194 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2020-02-08 15:09:55.210 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2020-02-08 15:09:55.256 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-02-08 15:09:55.277 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:09:55.288 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2020-02-08 15:09:55.289 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Started DormitoryApplication in 0.782 seconds (JVM running for 550.944)
+2020-02-08 15:09:55.291 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-02-08 15:09:56.723 [Thread-21] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2020-02-08 15:09:56.786 [Thread-21] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2020-02-08 15:09:56.787 [Thread-21] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 15:09:57.520 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 16558 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 15:09:57.527 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 15:09:57.956 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 15:09:57.957 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:09:57.958 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 15:09:57.958 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 15:09:57.967 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 15:09:57.967 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 435 ms
+2020-02-08 15:09:57.996 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-02-08 15:09:58.002 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-08 15:12:12.974 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 16558 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 15:12:12.975 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 15:12:13.649 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 15:12:13.650 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:12:13.651 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 15:12:13.652 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 15:12:13.669 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 15:12:13.669 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 692 ms
+2020-02-08 15:12:13.722 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-02-08 15:12:13.731 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-08 15:12:45.477 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 16558 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 15:12:45.478 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 15:12:46.062 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 15:12:46.063 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:12:46.063 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 15:12:46.065 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 15:12:46.077 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 15:12:46.077 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 597 ms
+2020-02-08 15:12:46.114 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-02-08 15:12:46.122 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-08 15:20:19.606 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 16558 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 15:20:19.607 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 15:20:20.082 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 15:20:20.083 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:20:20.084 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 15:20:20.084 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 15:20:20.098 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-3].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 15:20:20.098 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 488 ms
+2020-02-08 15:20:20.139 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-02-08 15:20:20.152 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-08 15:24:58.457 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 16558 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 15:24:58.458 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 15:24:58.840 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 15:24:58.841 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:24:58.842 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 15:24:58.842 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 15:24:58.865 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-4].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 15:24:58.865 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 405 ms
+2020-02-08 15:24:59.048 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 15:24:59.119 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2020-02-08 15:24:59.146 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2020-02-08 15:24:59.189 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-02-08 15:24:59.206 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:24:59.223 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2020-02-08 15:24:59.224 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Started DormitoryApplication in 0.846 seconds (JVM running for 1454.879)
+2020-02-08 15:24:59.227 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-02-08 15:25:00.595 [Thread-27] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2020-02-08 15:25:00.598 [Thread-27] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2020-02-08 15:25:00.599 [Thread-27] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 15:25:00.718 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 16558 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 15:25:00.719 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 15:25:01.102 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 15:25:01.103 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:25:01.104 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 15:25:01.104 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 15:25:01.124 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-4].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 15:25:01.125 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 404 ms
+2020-02-08 15:25:01.210 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 15:25:01.284 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2020-02-08 15:25:01.310 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2020-02-08 15:25:01.361 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-02-08 15:25:01.379 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:25:01.395 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2020-02-08 15:25:01.396 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Started DormitoryApplication in 0.717 seconds (JVM running for 1457.051)
+2020-02-08 15:25:01.398 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-02-08 15:31:43.454 [Thread-45] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2020-02-08 15:31:43.486 [Thread-45] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2020-02-08 15:31:43.486 [Thread-45] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 15:31:43.656 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 16558 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 15:31:43.657 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 15:31:44.063 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 15:31:44.065 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:31:44.066 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 15:31:44.068 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 15:31:44.094 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-4].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 15:31:44.094 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 436 ms
+2020-02-08 15:31:44.222 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 15:31:44.298 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2020-02-08 15:31:44.324 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+2020-02-08 15:31:44.370 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-02-08 15:31:44.389 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:31:44.393 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2020-02-08 15:31:44.394 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Started DormitoryApplication in 0.775 seconds (JVM running for 1860.049)
+2020-02-08 15:31:44.396 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-02-08 15:32:56.368 [Thread-51] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+2020-02-08 15:32:56.398 [Thread-51] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+2020-02-08 15:32:56.399 [Thread-51] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 15:32:57.026 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 16558 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 15:32:57.032 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 15:32:57.725 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 15:32:57.726 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:32:57.727 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 15:32:57.734 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 15:32:57.748 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-4].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 15:32:57.748 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 713 ms
+2020-02-08 15:32:57.780 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-02-08 15:32:57.804 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-08 15:39:33.161 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 16558 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 15:39:33.162 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 15:39:33.560 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 15:39:33.561 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:39:33.562 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 15:39:33.562 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 15:39:33.570 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 15:39:33.571 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 405 ms
+2020-02-08 15:39:33.591 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-02-08 15:39:33.600 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-08 15:42:14.615 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 16558 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 15:42:14.615 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 15:42:15.171 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 15:42:15.172 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:42:15.173 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 15:42:15.173 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 15:42:15.184 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-6].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 15:42:15.184 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 556 ms
+2020-02-08 15:42:15.204 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2020-02-08 15:42:15.209 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-08 15:42:16.799 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 16558 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 15:42:16.800 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 15:42:17.155 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 15:42:17.162 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:42:17.163 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 15:42:17.163 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 15:42:17.174 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-7].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 15:42:17.174 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 373 ms
+2020-02-08 15:42:17.246 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
+2020-02-08 15:42:17.303 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
+2020-02-08 15:42:17.875 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 15:42:17.975 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-02-08 15:42:17.997 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:42:18.034 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2020-02-08 15:42:18.036 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Started DormitoryApplication in 1.285 seconds (JVM running for 2493.691)
+2020-02-08 15:42:18.043 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   MybatisPlusAutoConfiguration.MapperScannerRegistrarNotFoundConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.mybatis.spring.mapper.MapperFactoryBean; SearchStrategy: all) found beans of type 'org.mybatis.spring.mapper.MapperFactoryBean' &userMapper, &roomcostMapper, &romeinfoMapper, &powerMapper, &reserveMapper, &roleMapper (OnBeanCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration; SearchStrategy: all) found beans of type 'org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration' org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration (OnBeanCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration.CglibAutoProxyConfiguration:
+      Did not match:
+         - Ancestor org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+      Matched:
+         - @ConditionalOnProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2020-02-08 15:46:38.107 [Thread-57] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 15:46:38.108 [Thread-57] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
+2020-02-08 15:46:38.135 [Thread-57] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
+2020-02-08 15:46:38.386 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 16558 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 15:46:38.387 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 15:46:39.051 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 15:46:39.053 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:46:39.054 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 15:46:39.054 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 15:46:39.067 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-7].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 15:46:39.067 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 677 ms
+2020-02-08 15:46:39.131 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Starting...
+2020-02-08 15:46:39.144 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Start completed.
+2020-02-08 15:46:39.458 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 15:46:39.542 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-02-08 15:46:39.575 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:46:39.585 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2020-02-08 15:46:39.590 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Started DormitoryApplication in 1.284 seconds (JVM running for 2755.245)
+2020-02-08 15:46:39.592 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-02-08 15:47:00.450 [Thread-72] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 15:47:00.452 [Thread-72] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown initiated...
+2020-02-08 15:47:00.486 [Thread-72] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown completed.
+2020-02-08 15:47:00.630 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 16558 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 15:47:00.630 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 15:47:01.249 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8a8c54af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-08 15:47:01.375 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 15:47:01.376 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:47:01.376 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 15:47:01.377 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 15:47:01.386 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-7].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 15:47:01.386 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 753 ms
+2020-02-08 15:47:01.461 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Starting...
+2020-02-08 15:47:01.487 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Start completed.
+2020-02-08 15:47:02.131 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-02-08 15:47:02.202 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 15:47:02.225 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-02-08 15:47:02.303 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-02-08 15:47:02.317 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-02-08 15:47:02.359 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-02-08 15:47:02.518 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:47:02.521 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2020-02-08 15:47:02.522 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Started DormitoryApplication in 1.923 seconds (JVM running for 2778.177)
+2020-02-08 15:47:02.525 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-02-08 15:51:37.751 [Thread-78] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 15:51:37.755 [Thread-78] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown initiated...
+2020-02-08 15:51:37.794 [Thread-78] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-10 - Shutdown completed.
+2020-02-08 15:51:38.040 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 16558 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 15:51:38.040 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 15:51:39.255 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8a8c54af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-08 15:51:39.472 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 15:51:39.473 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:51:39.473 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 15:51:39.473 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 15:51:39.495 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-7].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 15:51:39.495 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1451 ms
+2020-02-08 15:51:39.608 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Starting...
+2020-02-08 15:51:39.727 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Start completed.
+2020-02-08 15:51:40.379 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-02-08 15:51:40.456 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 15:51:40.474 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-02-08 15:51:40.642 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-02-08 15:51:40.645 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-02-08 15:51:40.656 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-02-08 15:51:40.818 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:51:40.862 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2020-02-08 15:51:40.863 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Started DormitoryApplication in 2.87 seconds (JVM running for 3056.519)
+2020-02-08 15:51:40.870 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2020-02-08 15:51:46.341 [Thread-89] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-08 15:51:46.343 [Thread-89] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown initiated...
+2020-02-08 15:51:46.349 [Thread-89] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-11 - Shutdown completed.
+2020-02-08 15:51:52.453 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Starting DormitoryApplication on localhost.localdomain with PID 21673 (/root/javPproject/dormitory/target/classes started by root in /root/javPproject/dormitory)
+2020-02-08 15:51:52.468 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - The following profiles are active: dev
+2020-02-08 15:51:52.559 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-08 15:51:52.560 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-08 15:51:54.016 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d09b8858] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-08 15:51:54.415 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+2020-02-08 15:51:54.438 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:51:54.449 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-02-08 15:51:54.449 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-02-08 15:51:54.523 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-02-08 15:51:54.524 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1964 ms
+2020-02-08 15:51:54.781 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-02-08 15:51:54.927 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-02-08 15:51:55.657 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-02-08 15:51:55.792 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-08 15:51:55.846 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-02-08 15:51:56.022 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-02-08 15:51:56.033 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-02-08 15:51:56.061 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-02-08 15:51:56.220 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2020-02-08 15:51:56.250 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8088 (http) with context path ''
+2020-02-08 15:51:56.258 [restartedMain] INFO  com.zjnu.dormitory.DormitoryApplication - Started DormitoryApplication in 4.851 seconds (JVM running for 6.14)
