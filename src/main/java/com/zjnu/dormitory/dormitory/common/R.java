@@ -2,12 +2,14 @@ package com.zjnu.dormitory.dormitory.common;
 
 
 import lombok.Data;
+import org.apache.poi.ss.formula.functions.T;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 
-//定义具体的数据返回格式
 @Data
 public class R {
     //链式编程
@@ -23,7 +25,7 @@ public class R {
         R r = new R();
         r.setSuccess(true);
         r.setCode(ResultCode.SUCCESS);
-        r.setMessage("操作成功");
+        r.setMessage("");
         return r;
     }
 
