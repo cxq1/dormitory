@@ -3,13 +3,17 @@ package com.zjnu.dormitory.dormitory.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.zjnu.dormitory.dormitory.common.R;
+import com.zjnu.dormitory.dormitory.dto.PowerDto;
 import com.zjnu.dormitory.dormitory.entity.Power;
 import com.zjnu.dormitory.dormitory.service.PowerService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 /**
@@ -69,13 +73,25 @@ public class PowerController {
     }
     @ApiOperation(value = "添加权限")
     @PostMapping("add")
-    public R addPower(@RequestBody Power power){
-        boolean b = powerService.save(power);
-        if(b){
-            return R.ok();
+    public R addPower(@RequestBody @Valid PowerDto powerDto, BindingResult bindingResult){
+        if(bindingResult.hasErrors()){
+            return R.error().message(bindingResult.getFieldError().getDefaultMessage());
         }else {
-            return R.error();
+            Power power=new Power();
+            BeanUtils.copyProperties(powerDto,power);
+            if(powerDto.getRoles().size()>0&&powerDto.getRoles()!=null){
+                for (String roleName : powerDto.getRoles()) {
+                    power.setRoleName(roleName);
+                }
+            }
+            boolean b = powerService.save(power);
+            if(b){
+                return R.ok();
+            }else {
+                return R.error();
+            }
         }
+
     }
 }
 

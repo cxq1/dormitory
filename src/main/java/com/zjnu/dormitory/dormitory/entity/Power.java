@@ -11,6 +11,8 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
+import javax.validation.constraints.NotEmpty;
+
 /**
  * <p>
  * 
@@ -30,18 +32,20 @@ public class Power implements Serializable {
     @TableId(value = "id", type = IdType.ID_WORKER_STR)
     private String id;
 
+    @NotEmpty
     private String roleName;
 
     @ApiModelProperty(value = "权限规则")
+    @NotEmpty
     private String powerRule;
-
+    @NotEmpty
     private String powerName;
 
     @ApiModelProperty(value = "描述")
     private String info;
 
     @ApiModelProperty(value = "是否可用")
-    private boolean status;
+    private Integer status;
 
 
 }

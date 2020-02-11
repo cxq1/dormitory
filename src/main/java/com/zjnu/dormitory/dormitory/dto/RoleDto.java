@@ -1,50 +1,44 @@
-package com.zjnu.dormitory.dormitory.entity;
+package com.zjnu.dormitory.dormitory.dto;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
-import java.io.Serializable;
-
 import com.baomidou.mybatisplus.annotation.TableLogic;
-import io.swagger.annotations.ApiModel;
+import com.zjnu.dormitory.dormitory.entity.Power;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.experimental.Accessors;
 
 import javax.validation.constraints.NotEmpty;
+import java.util.List;
 
-/**
- * <p>
- * 
- * </p>
- *
- * @author testjava
- * @since 2020-02-10
- */
 @Data
-@EqualsAndHashCode(callSuper = false)
-@Accessors(chain = true)
-@ApiModel(value="Role对象", description="")
-public class Role implements Serializable {
-
-    private static final long serialVersionUID = 1L;
-
+public class RoleDto {
     @TableId(value = "id", type = IdType.ID_WORKER_STR)
     private String id;
 
+    @NotEmpty
     @ApiModelProperty(value = "角色规则")
-    @NotEmpty(message = "角色规则不能为空")
     private String roleRule;
 
-    @NotEmpty(message = "角色名不能为空")
+    @NotEmpty
     private String roleName;
 
     @ApiModelProperty(value = "描述")
     private String info;
 
     @ApiModelProperty(value = "状态")
-    @TableLogic
     private Integer status;
 
+    private List<String>powers;
 
+    @Override
+    public String toString() {
+        return "RoleDto{" +
+                "id='" + id + '\'' +
+                ", roleRule='" + roleRule + '\'' +
+                ", roleName='" + roleName + '\'' +
+                ", info='" + info + '\'' +
+                ", status=" + status +
+                ", powers=" + powers +
+                '}';
+    }
 }
