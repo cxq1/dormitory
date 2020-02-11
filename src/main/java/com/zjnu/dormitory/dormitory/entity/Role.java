@@ -3,6 +3,8 @@ package com.zjnu.dormitory.dormitory.entity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
+
+import com.baomidou.mybatisplus.annotation.TableLogic;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -15,7 +17,7 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author testjava
- * @since 2020-02-08
+ * @since 2020-02-10
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -31,14 +33,13 @@ public class Role implements Serializable {
     @ApiModelProperty(value = "角色规则")
     private String roleRule;
 
-    private String userName;
-
     private String roleName;
 
     @ApiModelProperty(value = "描述")
     private String info;
 
     @ApiModelProperty(value = "状态")
+    @TableLogic
     private Integer status;
 
 

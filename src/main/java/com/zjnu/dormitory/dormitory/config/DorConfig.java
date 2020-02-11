@@ -10,7 +10,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 @Configuration
 @MapperScan("com.zjnu.dormitory.dormitory.mapper")
-
 public class DorConfig {
     /**
      * 逻辑删除插件

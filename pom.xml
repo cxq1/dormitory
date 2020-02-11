@@ -86,6 +86,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.47</version>
         </dependency>
         <!--lombok用来简化实体类：需要安装lombok插件-->
         <dependency>

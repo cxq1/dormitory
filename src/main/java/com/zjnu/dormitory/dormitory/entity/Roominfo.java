@@ -16,13 +16,13 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author testjava
- * @since 2020-02-08
+ * @since 2020-02-10
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@ApiModel(value="Romeinfo对象", description="")
-public class Romeinfo implements Serializable {
+@ApiModel(value="Roominfo对象", description="")
+public class Roominfo implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

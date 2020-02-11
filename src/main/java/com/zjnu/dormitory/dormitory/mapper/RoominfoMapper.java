@@ -1,6 +1,6 @@
 package com.zjnu.dormitory.dormitory.mapper;
 
-import com.zjnu.dormitory.dormitory.entity.Romeinfo;
+import com.zjnu.dormitory.dormitory.entity.Roominfo;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -9,8 +9,8 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author testjava
- * @since 2020-02-08
+ * @since 2020-02-10
  */
-public interface RomeinfoMapper extends BaseMapper<Romeinfo> {
+public interface RoominfoMapper extends BaseMapper<Roominfo> {
 
 }

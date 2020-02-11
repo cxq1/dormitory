@@ -17,7 +17,7 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author testjava
- * @since 2020-02-08
+ * @since 2020-02-10
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -40,12 +40,8 @@ public class Power implements Serializable {
     @ApiModelProperty(value = "描述")
     private String info;
 
-    /**
-     * 设置为逻辑删除
-     */
-    @TableLogic
-    @ApiModelProperty(value = "逻辑删除 1（true）已删除， 0（false）未删除")
-    private Integer status;
+    @ApiModelProperty(value = "是否可用")
+    private boolean status;
 
 
 }
