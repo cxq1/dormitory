@@ -39,13 +39,31 @@ public class RoleController {
     private PowerService powerService;
 
 
+    @ApiOperation(value = "添加角色")
+    @PostMapping("add")
+    public R saveRole(@RequestBody Role role){
+        boolean b = roleService.save(role);
+        if(b){
+            return R.ok();
+        }else {
+            return R.error();
+        }
+    }
 
     @ApiOperation(value = "获取角色列表")
-    @GetMapping("/list")
+    @GetMapping("list")
     public R getRoleList(){
         List<Role> list = roleService.list(null);
         return R.ok().data("data",list);
     }
+
+    /**
+     * 只更新角色信息
+     * @param roleDto
+     * @param bindingResult
+     * @return
+     *
+     */
     @ApiOperation(value = "更新角色信息")
     @PostMapping("/update")
     public R updateRole(@RequestBody @Valid RoleDto roleDto, BindingResult bindingResult){
