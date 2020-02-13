@@ -52,4 +52,14 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
 
         baseMapper.selectPage(userPage,queryWrapper);
     }
+
+    @Override
+    public User selectUser(String uid, String oldPw,String name) {
+        QueryWrapper<User> queryWrapper=new QueryWrapper<>();
+        queryWrapper.eq("uid",uid);
+        queryWrapper.eq("password",oldPw);
+        queryWrapper.eq("name",name);
+        User user = baseMapper.selectOne(queryWrapper);
+        return user;
+    }
 }

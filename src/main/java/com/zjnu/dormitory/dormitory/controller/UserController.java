@@ -4,6 +4,7 @@ package com.zjnu.dormitory.dormitory.controller;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.zjnu.dormitory.dormitory.common.R;
 import com.zjnu.dormitory.dormitory.entity.User;
+import com.zjnu.dormitory.dormitory.form.MdPw;
 import com.zjnu.dormitory.dormitory.form.QueryUser;
 import com.zjnu.dormitory.dormitory.service.UserService;
 import io.swagger.annotations.Api;
@@ -14,6 +15,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import javax.validation.constraints.NotEmpty;
 import java.util.List;
 
 /**
@@ -31,6 +33,46 @@ import java.util.List;
 public class UserController {
     @Autowired
     private UserService userService;
+
+    @ApiOperation(value = "修改密码")
+    @PostMapping("mdpw")
+    public R updaePw(@Valid @RequestBody MdPw mdPw,BindingResult bindingResult){
+        if(bindingResult.hasErrors()){
+            return R.error().message(bindingResult.getFieldError().getDefaultMessage());
+        }else {
+            String oldPw=mdPw.getOldPwd();
+            String uid = mdPw.getUid();
+            String name = mdPw.getName();
+            User user= userService.selectUser(uid,oldPw,name);
+            if(user!=null){
+                user.setPassword(mdPw.getNewPwd());
+                boolean b = userService.updateById(user);
+                if(b){
+                    return R.ok();
+                }else {
+                    return R.error();
+                }
+            }else {
+                return R.error().message("用户不存在");
+            }
+        }
+    }
+
+    @PostMapping("add")
+    @ApiOperation(value = "添加用户")
+    public R addUser(@Valid @RequestBody User user,BindingResult bindingResult){
+        if(bindingResult.hasErrors()){
+            return R.error().message(bindingResult.getFieldError().getDefaultMessage());
+        }else {
+            boolean b = userService.save(user);
+            if(b){
+                return R.ok();
+            }else {
+                return R.error();
+            }
+
+        }
+    }
 
     @ApiOperation(value = "更新用户")
     @PostMapping("update")

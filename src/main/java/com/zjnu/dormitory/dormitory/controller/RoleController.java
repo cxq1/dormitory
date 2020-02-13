@@ -88,19 +88,19 @@ public class RoleController {
     @CrossOrigin
     public R getRoleById(@PathVariable String id){
         Role role = roleService.getById(id);
-        QueryWrapper<Power>queryWrapper=new QueryWrapper<>();
-        queryWrapper.eq("role_name",role.getRoleName());
-        List<String> powerList=null;
-        try {
-            powerList = powerService.list(queryWrapper).stream().map(e->e.getPowerName()).collect(Collectors.toList());
-        }catch (Exception e){
-            return R.error().message("该角色没有对应的power");
-        }
+//        QueryWrapper<Power>queryWrapper=new QueryWrapper<>();
+//        queryWrapper.eq("role_name",role.getRoleName());
+//        List<String> powerList=null;
+//        try {
+//            powerList = powerService.list(queryWrapper).stream().map(e->e.getPowerName()).collect(Collectors.toList());
+//        }catch (Exception e){
+//            return R.error().message("该角色没有对应的power");
+//        }
 
-        RoleDto roleDto =new RoleDto();
-        BeanUtils.copyProperties(role,roleDto);
-        roleDto.setPowers(powerList);
-        return R.ok().data("data",roleDto);
+//        RoleDto roleDto =new RoleDto();
+//        BeanUtils.copyProperties(role,roleDto);
+//        roleDto.setPowers(powerList);
+        return R.ok().data("data",role);
     }
 }
 
