@@ -8,6 +8,7 @@ import com.zjnu.dormitory.dormitory.entity.User;
 import com.zjnu.dormitory.dormitory.form.MdPw;
 import com.zjnu.dormitory.dormitory.form.QueryUser;
 import com.zjnu.dormitory.dormitory.service.UserService;
+import com.zjnu.dormitory.dormitory.utils.VerifyUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.models.auth.In;
@@ -16,6 +17,10 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+<<<<<<< HEAD
+=======
+import javax.servlet.http.HttpServletResponse;
+>>>>>>> 5faee2f8eb8031cf59c9d42467905d09576a6248
 import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
 import java.util.List;
@@ -107,7 +112,7 @@ public class UserController {
         Page<User>userPage=new Page<>(page,limit);
         userService.pageList(userPage,queryUser);
         List<User> userList = userPage.getRecords();
-        long total = userPage.getTotal();
+
         return R.ok().data("data",userList).data("count",userList.size());
     }
 

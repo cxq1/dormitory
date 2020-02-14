@@ -1,9 +1,14 @@
 package com.zjnu.dormitory.dormitory.utils;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5faee2f8eb8031cf59c9d42467905d09576a6248
 import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+<<<<<<< HEAD
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -11,6 +16,12 @@ import java.awt.image.BufferedImage;
 import java.util.Random;
 
 
+=======
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.util.Random;
+
+>>>>>>> 5faee2f8eb8031cf59c9d42467905d09576a6248
 public class VerifyUtil {
     public static final String RANDOMCODEKEY= "RANDOMREDISKEY";//放到session中的key
     private String randString = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";//随机产生数字与字母组合的字符串
@@ -18,7 +29,11 @@ public class VerifyUtil {
     private int height = 25;// 图片高
     private int lineSize = 40;// 干扰线数量
     private int stringNum = 4;// 随机产生字符数量
+<<<<<<< HEAD
     public static String serCode="";
+=======
+
+>>>>>>> 5faee2f8eb8031cf59c9d42467905d09576a6248
     private Random random = new Random();
 
     /**
@@ -66,7 +81,11 @@ public class VerifyUtil {
         session.removeAttribute(RANDOMCODEKEY);
         session.setAttribute(RANDOMCODEKEY, randomString);
         //设置失效时间1分钟
+<<<<<<< HEAD
         session.setMaxInactiveInterval(3000);
+=======
+        session.setMaxInactiveInterval(60);
+>>>>>>> 5faee2f8eb8031cf59c9d42467905d09576a6248
         g.dispose();
         try {
             // 将内存中的图片通过流动形式输出到客户端
