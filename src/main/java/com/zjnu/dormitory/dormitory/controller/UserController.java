@@ -3,6 +3,7 @@ package com.zjnu.dormitory.dormitory.controller;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.zjnu.dormitory.dormitory.common.R;
+import com.zjnu.dormitory.dormitory.dto.UserDto;
 import com.zjnu.dormitory.dormitory.entity.User;
 import com.zjnu.dormitory.dormitory.form.MdPw;
 import com.zjnu.dormitory.dormitory.form.QueryUser;
@@ -14,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
 import java.util.List;
@@ -119,5 +121,6 @@ public class UserController {
             return R.error();
         }
     }
+
 }
 

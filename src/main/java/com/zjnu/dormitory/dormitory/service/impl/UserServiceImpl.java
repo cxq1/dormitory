@@ -2,6 +2,7 @@ package com.zjnu.dormitory.dormitory.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.zjnu.dormitory.dormitory.dto.UserDto;
 import com.zjnu.dormitory.dormitory.entity.User;
 import com.zjnu.dormitory.dormitory.form.QueryUser;
 import com.zjnu.dormitory.dormitory.mapper.UserMapper;
@@ -62,4 +63,6 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         User user = baseMapper.selectOne(queryWrapper);
         return user;
     }
+
+
 }

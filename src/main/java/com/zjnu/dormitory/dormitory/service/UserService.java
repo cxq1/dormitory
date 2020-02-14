@@ -18,4 +18,6 @@ public interface UserService extends IService<User> {
     void pageList(Page<User> userPage, QueryUser queryUser);
 
     User selectUser(String uid, String oldPw,String name);
+
+
 }
