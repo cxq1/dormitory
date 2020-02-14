@@ -1,36 +1,22 @@
-package com.zjnu.dormitory.dormitory.entity;
+package com.zjnu.dormitory.dormitory.dto;
 
 import com.baomidou.mybatisplus.annotation.IdType;
-import java.util.Date;
 import com.baomidou.mybatisplus.annotation.TableId;
-import java.io.Serializable;
-import io.swagger.annotations.ApiModel;
+import com.zjnu.dormitory.dormitory.entity.Roominfo;
+import com.zjnu.dormitory.dormitory.entity.User;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.experimental.Accessors;
 
-/**
- * <p>
- * 
- * </p>
- *
- * @author testjava
- * @since 2020-02-13
- */
+import java.util.Date;
+
 @Data
-@EqualsAndHashCode(callSuper = false)
-@Accessors(chain = true)
-@ApiModel(value="Reserve对象", description="")
-public class Reserve implements Serializable {
+public class ReserveDto {
 
-    private static final long serialVersionUID = 1L;
-
-    @TableId(value = "id", type = IdType.ID_WORKER_STR)
     private String id;
 
     private String name;
     private String uid;
+
     @ApiModelProperty(value = "房间号")
     private String rno;
 
@@ -56,5 +42,6 @@ public class Reserve implements Serializable {
     @ApiModelProperty(value = "预订时间,创建时间")
     private Date gmtCreatedTime;
 
-
+    private Roominfo roominfo;
+    private User user;
 }
