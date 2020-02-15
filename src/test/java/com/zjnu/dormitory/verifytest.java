@@ -1,10 +1,6 @@
 package com.zjnu.dormitory;
 
-import com.zjnu.dormitory.dormitory.utils.VerifyUtil;
 import org.junit.Test;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 public class verifytest {
     @Test
