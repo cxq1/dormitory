@@ -43,8 +43,8 @@ public class Role implements Serializable {
     private String info;
 
     @ApiModelProperty(value = "状态")
-    @TableLogic
-    private Integer status;
+//    @TableLogic
+    private Boolean status;
 
 
 }

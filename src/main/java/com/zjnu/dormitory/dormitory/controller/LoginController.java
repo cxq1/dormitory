@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 //import static com.zjnu.dormitory.dormitory.utils.VerifyUtil.RANDOMCODEKEY;
 
 @RestController
-//@CrossOrigin
+@CrossOrigin
 @Logger
 public class LoginController {
     @Autowired

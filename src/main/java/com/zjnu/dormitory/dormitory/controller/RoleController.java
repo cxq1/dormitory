@@ -38,6 +38,16 @@ public class RoleController {
     @Autowired
     private PowerService powerService;
 
+    @ApiOperation(value = "根据id删除role")
+    @DeleteMapping("delete/{id}")
+    public R deleteById(@PathVariable String id){
+        boolean b = roleService.removeById(id);
+        if(b){
+            return R.ok();
+        }else {
+            return R.error();
+        }
+    }
 
     @ApiOperation(value = "添加角色")
     @PostMapping("add")

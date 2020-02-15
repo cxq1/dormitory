@@ -9,6 +9,7 @@ import com.zjnu.dormitory.dormitory.form.QueryUser;
 import com.zjnu.dormitory.dormitory.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
@@ -98,7 +99,26 @@ public class UserController {
     @RequestMapping("list")
     public R getUserList(@RequestParam(name = "limit",required = false)Integer limit,
                          @RequestParam(value = "page",required = false)Integer page,
-                         @RequestBody(required = false) QueryUser queryUser){
+                         @RequestParam(name = "name",required = false)String name,
+                         @RequestParam(name = "roleName",required = false)String roleName,
+                         @RequestParam(name = "number",required = false)String number,
+                         @RequestParam(name = "mail",required = false)String mail){
+        QueryUser queryUser= new QueryUser();
+        /**
+         * 创建搜索条件如果参数存在
+         */
+        if(!StringUtils.isEmpty(name)){
+            queryUser.setName(name);
+        }
+        if(!StringUtils.isEmpty(roleName)){
+            queryUser.setRoleName(roleName);
+        }
+        if(!StringUtils.isEmpty(number)){
+            queryUser.setNumber(number);
+        }
+        if(!StringUtils.isEmpty(mail)){
+            queryUser.setMail(mail);
+        }
         System.out.println(queryUser);
         Page<User>userPage=new Page<>(page,limit);
         userService.pageList(userPage,queryUser);

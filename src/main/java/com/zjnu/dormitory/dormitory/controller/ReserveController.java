@@ -14,6 +14,7 @@ import com.zjnu.dormitory.dormitory.service.RoominfoService;
 import com.zjnu.dormitory.dormitory.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -41,6 +42,16 @@ public class ReserveController {
     @Autowired
     private UserService userService;
 
+    @ApiOperation(value = "删除reserve根据id")
+    @DeleteMapping("delete/{id}")
+    public R deleteById(@PathVariable String id){
+        boolean b = reserveService.removeById(id);
+        if(b){
+            return R.ok();
+        }else {
+            return R.error();
+        }
+    }
     @ApiOperation(value = "更新审核")
     @PostMapping("conform")
     public R conformServe(@RequestBody ReserveDto reserveDto){
@@ -77,7 +88,19 @@ public class ReserveController {
     @RequestMapping(value = "list")
     public R getAllList(@RequestParam(name = "limit", required = false, defaultValue = "10") Integer limit,
                         @RequestParam(value = "page", required = false, defaultValue = "1") Integer page,
-                        @RequestBody(required = false) QueryReserve queryReserve) {
+                        @RequestParam(value = "name",required = false)String name,
+                        @RequestParam(value = "daynum",required = false)String daynum,
+                        @RequestParam(value = "rno",required = false)String rno) {
+        QueryReserve queryReserve=new QueryReserve();
+        if(!StringUtils.isEmpty(name)){
+            queryReserve.setName(name);
+        }
+        if(!StringUtils.isEmpty(daynum)){
+            queryReserve.setDayNum(Integer.valueOf(daynum));
+        }
+        if(!StringUtils.isEmpty(rno)){
+            queryReserve.setRno(rno);
+        }
         Page<Reserve> reservePage = new Page<>(page, limit);
         reserveService.pageList(reservePage, queryReserve);
         List<Reserve> reserveList = reservePage.getRecords();

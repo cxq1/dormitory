@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class QueryReserve {
-    private String username;
+    private String  name;
     private String rno;
     private Integer dayNum;
 }

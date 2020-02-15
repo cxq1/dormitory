@@ -30,7 +30,7 @@ public class ReserveServiceImpl extends ServiceImpl<ReserveMapper, Reserve> impl
         QueryWrapper<Reserve>queryWrapper=new QueryWrapper<>();
         Integer dayNum = queryReserve.getDayNum();
         String rno = queryReserve.getRno();
-        String username = queryReserve.getUsername();
+        String username = queryReserve.getName();
         if(dayNum!=null){
             queryWrapper.eq("day_num",dayNum);
         }
@@ -38,7 +38,7 @@ public class ReserveServiceImpl extends ServiceImpl<ReserveMapper, Reserve> impl
             queryWrapper.eq("rno",rno);
         }
         if(!StringUtils.isEmpty(username)){
-            queryWrapper.eq("username",username);
+            queryWrapper.eq("name",username);
         }
 
         baseMapper.selectPage(reservePage,queryWrapper);
