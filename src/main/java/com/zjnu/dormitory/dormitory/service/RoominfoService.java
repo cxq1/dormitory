@@ -1,6 +1,6 @@
 package com.zjnu.dormitory.dormitory.service;
 
-import com.zjnu.dormitory.dormitory.entity.Romeinfo;
+import com.zjnu.dormitory.dormitory.entity.Roominfo;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,8 +9,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author testjava
- * @since 2020-02-08
+ * @since 2020-02-10
  */
-public interface RomeinfoService extends IService<Romeinfo> {
+public interface RoominfoService extends IService<Roominfo> {
 
 }

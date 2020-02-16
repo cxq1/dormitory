@@ -26,7 +26,7 @@ public class codeGenerator {
 
         gc.setAuthor("testjava");
         gc.setOpen(false); //生成后是否打开资源管理器
-        gc.setFileOverride(false); //重新生成时文件是否覆盖
+        gc.setFileOverride(true); //重新生成时文件是否覆盖
         gc.setServiceName("%sService");    //去掉Service接口的首字母I
         gc.setIdType(IdType.ID_WORKER_STR); //主键策略
         gc.setDateType(DateType.ONLY_DATE);//定义生成的实体类中日期类型
@@ -36,7 +36,7 @@ public class codeGenerator {
 
         // 3、数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://localhost:3306/dormitory");
+        dsc.setUrl("jdbc:mysql://localhost:3306/dormitory?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC");
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
         dsc.setPassword("qq123321");
@@ -56,7 +56,7 @@ public class codeGenerator {
 
         // 5、策略配置
         StrategyConfig strategy = new StrategyConfig();
-        strategy.setInclude("role","user","power","reserve","romeinfo","roomcost");
+        strategy.setInclude("reserve");
 
         strategy.setNaming(NamingStrategy.underline_to_camel);//数据库表映射到实体的命名策略
         strategy.setTablePrefix(pc.getModuleName() + "_"); //生成实体时去掉表前缀
