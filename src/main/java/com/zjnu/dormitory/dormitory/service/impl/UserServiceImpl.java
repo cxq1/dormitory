@@ -11,6 +11,8 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
+import java.util.Set;
+
 /**
  * <p>
  *  服务实现类
@@ -62,6 +64,21 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         queryWrapper.eq("name",name);
         User user = baseMapper.selectOne(queryWrapper);
         return user;
+    }
+
+    @Override
+    public Set<String> findRolesByUsername(String username) {
+        return null;
+    }
+
+    @Override
+    public Set<String> findPermissionsByUsername(String username) {
+        return null;
+    }
+
+    @Override
+    public User findByUserName(String username) {
+        return null;
     }
 
 

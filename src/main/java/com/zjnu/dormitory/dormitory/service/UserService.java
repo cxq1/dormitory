@@ -5,6 +5,8 @@ import com.zjnu.dormitory.dormitory.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.zjnu.dormitory.dormitory.form.QueryUser;
 
+import java.util.Set;
+
 /**
  * <p>
  *  服务类
@@ -20,4 +22,9 @@ public interface UserService extends IService<User> {
     User selectUser(String uid, String oldPw,String name);
 
 
+    Set<String> findRolesByUsername(String username);
+
+    Set<String> findPermissionsByUsername(String username);
+
+    User findByUserName(String username);
 }
