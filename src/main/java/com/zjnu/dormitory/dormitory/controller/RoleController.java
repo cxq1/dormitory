@@ -64,7 +64,7 @@ public class RoleController {
     @GetMapping("list")
     public R getRoleList(){
         List<Role> list = roleService.list(null);
-        return R.ok().data("data",list);
+        return R.ok().data("data",list).data("count",list.size());
     }
 
     /**
