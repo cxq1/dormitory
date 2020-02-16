@@ -97,8 +97,8 @@ public class UserController {
 
     @ApiOperation(value = "用户列表")
     @RequestMapping("list")
-    public R getUserList(@RequestParam(name = "limit",required = false)Integer limit,
-                         @RequestParam(value = "page",required = false)Integer page,
+    public R getUserList(@RequestParam(name = "limit",defaultValue = "10")Integer limit,
+                         @RequestParam(value = "page",defaultValue = "1")Integer page,
                          @RequestParam(name = "name",required = false)String name,
                          @RequestParam(name = "roleName",required = false)String roleName,
                          @RequestParam(name = "number",required = false)String number,
@@ -124,7 +124,7 @@ public class UserController {
         userService.pageList(userPage,queryUser);
         List<User> userList = userPage.getRecords();
 
-        return R.ok().data("data",userList).data("count",userList.size());
+        return R.ok().data("data",userList).data("count",userPage.getTotal());
     }
 
     @ApiOperation(value = "删除用户根据id")

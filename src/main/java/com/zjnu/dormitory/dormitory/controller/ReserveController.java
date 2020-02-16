@@ -105,7 +105,7 @@ public class ReserveController {
         reserveService.pageList(reservePage, queryReserve);
         List<Reserve> reserveList = reservePage.getRecords();
 
-        return R.ok().data("data", reserveList).data("count", reserveList.size());
+        return R.ok().data("data", reserveList).data("count", reservePage.getTotal());
     }
 }
 
