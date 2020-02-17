@@ -60,7 +60,7 @@ public class LoginController {
                 if(serValidateCode.equalsIgnoreCase(verifyCode)){
                     if("admin".equals(one.getRoleName())) {
                         request.getSession().setAttribute("admin", one);
-                        return R.ok();
+                        return R.ok().message("登录成功！");
                     }
                     else
                         return R.error().message("没有管理员权限!");
@@ -93,7 +93,7 @@ public class LoginController {
             if(one.getPassword().equals(password)){
                 if(serValidateCode.equalsIgnoreCase(verifyCode)){
                     request.getSession().setAttribute("user",one);
-                    return R.ok();
+                    return R.ok().message("登录成功！");
                 }
                 else return R.error().message("验证码错误!");
             }
