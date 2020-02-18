@@ -6,9 +6,13 @@ import com.zjnu.dormitory.dormitory.common.R;
 import com.zjnu.dormitory.dormitory.dto.UserDto;
 import com.zjnu.dormitory.dormitory.entity.User;
 import com.zjnu.dormitory.dormitory.service.UserService;
+import com.zjnu.dormitory.dormitory.utils.PasswordUtil;
 import com.zjnu.dormitory.dormitory.utils.VerifyCodeUtils;
 import io.swagger.annotations.ApiOperation;
 import jdk.nashorn.internal.runtime.logging.Logger;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
@@ -102,6 +106,38 @@ public class LoginController {
         }
     }
 
+    @PostMapping("/login")
+    public String login(UserDto userDTO,
+                        HttpServletRequest request,
+                        Integer rememberme){
+//        log.info("user:{}",userDTO);
+        if((userDTO.getUserName()!=null&&!"".equals(userDTO.getUserName()))&&(userDTO.getPassword()!=null&&!"".equals(userDTO.getPassword()))){
+            String newPassword= PasswordUtil.encodePwd(userDTO.getPassword());
+            UsernamePasswordToken token = new UsernamePasswordToken(userDTO.getUsername(),newPassword);
+            Subject subject = SecurityUtils.getSubject();
+            String user= (String) subject.getPrincipal();
+            if(rememberme!=null&&rememberme==1){
+                token.setRememberMe(true);
 
+            }
+            try {
+                subject.login(token);
+
+                request.getSession().setAttribute("user",userDTO.getUsername());
+                return "university/index";
+            }catch (Exception e){
+                log.error("msg{}",e.getMessage()+"用户名或密码错误");
+                model.addAttribute("msg","用户名或密码错误");
+                return "university/login";
+
+            }
+        }else {
+            model.addAttribute("msg","用户名或密码不能为空");
+            return "university/login";
+        }
+
+
+
+    }
 
 }
