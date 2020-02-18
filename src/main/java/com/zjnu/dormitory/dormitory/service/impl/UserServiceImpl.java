@@ -3,15 +3,22 @@ package com.zjnu.dormitory.dormitory.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.zjnu.dormitory.dormitory.dto.UserDto;
+import com.zjnu.dormitory.dormitory.entity.Power;
+import com.zjnu.dormitory.dormitory.entity.Role;
 import com.zjnu.dormitory.dormitory.entity.User;
 import com.zjnu.dormitory.dormitory.form.QueryUser;
 import com.zjnu.dormitory.dormitory.mapper.UserMapper;
+import com.zjnu.dormitory.dormitory.service.RoleService;
 import com.zjnu.dormitory.dormitory.service.UserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 /**
  * <p>
@@ -23,6 +30,10 @@ import java.util.Set;
  */
 @Service
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements UserService {
+    @Autowired
+    private RoleService roleService;
+    @Autowired
+    private PowerServiceImpl powerService;
 
     @Override
     public void pageList(Page<User> userPage, QueryUser queryUser) {
@@ -68,17 +79,31 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
 
     @Override
     public Set<String> findRolesByUsername(String username) {
-        return null;
+        QueryWrapper<User>queryWrapper=new QueryWrapper<>();
+        queryWrapper.eq("username",username);
+        User user = baseMapper.selectOne(queryWrapper);
+        String roleName = user.getRoleName();
+        HashSet<String>set=new HashSet<>();
+        set.add(roleName);
+        return set;
     }
 
     @Override
     public Set<String> findPermissionsByUsername(String username) {
-        return null;
+        Set<String> roles = this.findRolesByUsername(username);
+        QueryWrapper<Power>queryWrapper=new QueryWrapper<>();
+        for (String role : roles) {
+            queryWrapper.eq("role_name",role);
+        }
+        Set<String> set = powerService.list(queryWrapper).stream().map(e->e.getPowerRule()).collect(Collectors.toSet());
+        return set;
     }
 
     @Override
     public User findByUserName(String username) {
-        return null;
+        QueryWrapper<User>queryWrapper=new QueryWrapper<>();
+        queryWrapper.eq("username",username);
+        return queryWrapper.getEntity();
     }
 
 
