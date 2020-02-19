@@ -1,7 +1,5 @@
-package com.lib.equipment.manager.utils;
+package com.zjnu.dormitory.dormitory.utils;
 
-import com.lib.equipment.manager.exception.CustomizeErrorCode;
-import com.lib.equipment.manager.exception.CustomizeException;
 import com.sun.org.apache.xerces.internal.impl.dv.util.Base64;
 
 import java.security.MessageDigest;
@@ -23,7 +21,7 @@ public class PasswordUtil {
             System.out.println(sb);
             return String.valueOf(sb);
         }catch (Exception e){
-            throw new CustomizeException(CustomizeErrorCode.Encode_Error);
+            throw new RuntimeException("ff");
 
         }
     }
