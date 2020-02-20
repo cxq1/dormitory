@@ -31,7 +31,7 @@ public class RoominfoController {
     }
 
     //多条件组合并且带分页
-    @PostMapping("moreConditionPageList")
+    @RequestMapping("moreConditionPageList")
     public R getMoreConditionPageList(@RequestParam(name = "limit",defaultValue = "10")Integer limit,
                                       @RequestParam(value = "page",defaultValue = "1")Integer page,
                                       @RequestBody(required = false) QueryRoom queryRoom){
@@ -39,7 +39,7 @@ public class RoominfoController {
         roominfoService.pageListCondition(pageRoomInfo,queryRoom);
         long total = pageRoomInfo.getTotal();
         List<Roominfo> records = pageRoomInfo.getRecords();
-        return R.ok().data("total",total).data("items",records);
+        return R.ok().data("count",total).data("data",records);
     }
 
     //根据id查找
