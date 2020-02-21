@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import javax.websocket.Session;
 
 //import static com.zjnu.dormitory.dormitory.utils.VerifyUtil.RANDOMCODEKEY;
 
@@ -78,8 +80,8 @@ public class LoginController {
 
     @ApiOperation(value = "用户登录")
     @PostMapping("user/login")
-    public R userLogin(HttpServletRequest request,HttpServletResponse response,
-                   @RequestBody UserDto userDto){
+    public R userLogin(HttpServletRequest request, HttpServletResponse response,
+                       @RequestBody UserDto userDto, HttpSession session){
 //        response.addHeader("Access-Control-Allow-Origin", "http://localhost:8088");
         String userName=userDto.getUserName();
         String password=userDto.getPassword();
@@ -93,6 +95,9 @@ public class LoginController {
             if(one.getPassword().equals(password)){
                 if(serValidateCode.equalsIgnoreCase(verifyCode)){
                     request.getSession().setAttribute("user",one);
+                    User user = (User) request.getSession().getAttribute("user");
+//                    System.out.println(session.getId());
+//                    System.out.println("***********************************************");
                     return R.ok();
                 }
                 else return R.error().message("验证码错误!");

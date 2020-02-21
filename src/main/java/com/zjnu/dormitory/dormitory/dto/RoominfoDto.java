@@ -3,6 +3,7 @@ package com.zjnu.dormitory.dormitory.dto;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.annotations.ApiModelProperty;
+import io.swagger.models.auth.In;
 import lombok.Data;
 
 import java.util.Date;
@@ -26,7 +27,7 @@ public class RoominfoDto {
     private String rprice;
 
     @ApiModelProperty(value = "总价钱")
-    private String sum;
+    private Integer sum;
 
     @ApiModelProperty(value = "房间号")
     private String rno;

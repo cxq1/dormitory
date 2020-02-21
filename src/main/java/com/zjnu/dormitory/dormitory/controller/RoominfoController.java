@@ -13,13 +13,16 @@ import com.zjnu.dormitory.dormitory.service.RoominfoService;
 import com.zjnu.dormitory.dormitory.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.models.auth.In;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.security.Principal;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -32,6 +35,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/dormitory/roominfo")
+@CrossOrigin
 public class RoominfoController {
 
     @Autowired
@@ -40,21 +44,30 @@ public class RoominfoController {
     UserService userService;
     @Autowired
     ReserveService reserveService;
+    private HttpServletResponse response;
 
     @GetMapping("list")
     @ApiOperation(value = "获取所有消费列表")
     public R list(@RequestParam(name = "limit",defaultValue = "10")Integer limit,
-                  @RequestParam(value = "page",defaultValue = "1")Integer page, HttpServletRequest request){
-
+                  @RequestParam(value = "page",defaultValue = "1")Integer page,
+                  HttpServletRequest request, HttpServletResponse response,
+                  HttpSession session){
 
 //        User user = (User) request.getSession().getAttribute("user");
-
-
+//        System.out.println(session.getId());
+//        System.out.println("***********************************************");
         Page<RoominfoDto> roominfoDtoPage = new Page<>(page,limit);
-        roominfoService.getRoomInfo(roominfoDtoPage);
+        roominfoService.getAllRoomInfo(roominfoDtoPage);
         List<RoominfoDto> roominfoDtoList = roominfoDtoPage.getRecords();
 
-        return R.ok().data("data",roominfoDtoList).data("count",roominfoDtoPage.getTotal());
+        List temps = new ArrayList();
+        for(RoominfoDto roominfod:roominfoDtoList){
+            int day = Integer.parseInt(roominfod.getDayNum());
+            int price = Integer.parseInt(roominfod.getRprice());
+            roominfod.setSum(day*price);
+            temps.add(roominfod);
+        }
+        return R.ok().data("data",temps).data("count",temps.size());
     }
 
 //    @ApiOperation(value = "查找用户根据id")
@@ -71,7 +84,14 @@ public class RoominfoController {
         Page<RoominfoDto> roominfoDtoPage = new Page<>(page,limit);
         roominfoService.getAllRoomInfo(roominfoDtoPage);
         List<RoominfoDto> roominfoDtoList = roominfoDtoPage.getRecords();
-        return R.ok().data("data",roominfoDtoList).data("count",roominfoDtoPage.getTotal());
+        List temps = new ArrayList();
+        for(RoominfoDto roominfod:roominfoDtoList){
+            int day = Integer.valueOf(roominfod.getDayNum());
+            int price = Integer.valueOf(roominfod.getRprice());
+            roominfod.setSum(day*price);
+            temps.add(roominfod);
+        }
+        return R.ok().data("data",temps).data("count",temps.size());
     }
 
     @ApiOperation(value = "管理员删除记录")

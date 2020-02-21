@@ -21,8 +21,6 @@ import java.util.List;
  * @since 2020-02-10
  */
 public interface RoomcostMapper extends BaseMapper<Roomcost> {
-//    @Select("SELECT roomcost.*,roominfo.`rtype`,`rprice` FROM roomcost,roominfo WHERE roomcost" +
-//            ".rno=roominfo.rno")
-//    List<RoomcostDto> getRoomCost(Page<RoomcostDto> page);
+
 
 }

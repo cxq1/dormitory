@@ -23,8 +23,4 @@ import org.springframework.stereotype.Service;
 public class RoomcostServiceImpl extends ServiceImpl<RoomcostMapper, Roomcost> implements RoomcostService {
 
 
-//    @Override
-//    public Page<RoomcostDto> getRoomCost(Page<RoomcostDto> page) {
-//        return page.setRecords(this.baseMapper.getRoomCost(page));
-//    }
 }

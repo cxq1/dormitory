@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.PathVariable;
  * @since 2020-02-10
  */
 public interface RoominfoService extends IService<Roominfo> {
-    Page<RoominfoDto> getRoomInfo(@PathVariable Page<RoominfoDto> page);
+//    Page<RoominfoDto> getRoomInfo(@PathVariable Page<RoominfoDto> page);
 
     Page<RoominfoDto> getAllRoomInfo(Page<RoominfoDto> page);
 }

@@ -20,10 +20,10 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class RoominfoServiceImpl extends ServiceImpl<RoominfoMapper, Roominfo> implements RoominfoService {
-    @Override
-    public Page<RoominfoDto> getRoomInfo(Page<RoominfoDto> page) {
-        return page.setRecords(this.baseMapper.getRoomInfo(page));
-    }
+//    @Override
+//    public Page<RoominfoDto> getRoomInfo(Page<RoominfoDto> page) {
+//        return page.setRecords(this.baseMapper.getRoomInfo(page));
+//    }
 
     @Override
     public Page<RoominfoDto> getAllRoomInfo(Page<RoominfoDto> page) {

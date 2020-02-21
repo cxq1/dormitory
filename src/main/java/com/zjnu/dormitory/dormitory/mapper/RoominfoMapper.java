@@ -20,12 +20,13 @@ import java.util.List;
  * @since 2020-02-10
  */
 public interface RoominfoMapper extends BaseMapper<Roominfo> {
-    @Select("SELECT roominfo.`rno`,`rtype`,`rprice`,reserve.`r_in_date`,reserve.`uid`,reserve.`id`,`day_num` FROM " +
-            "roominfo,reserve" + " " +
-            "WHERE " +
-            "roominfo.rno=reserve.rno && reserve.checked=1")
-//    @Select("SELECT roominfo.`rno`,`rtype`")
-    List<RoominfoDto> getRoomInfo(@PathVariable Page<RoominfoDto> page);
+    //可删
+//    @Select("SELECT roominfo.`rno`,`rtype`,`rprice`,reserve.`r_in_date`,reserve.`uid`,reserve.`id`,`day_num` FROM " +
+//            "roominfo,reserve" + " " +
+//            "WHERE " +
+//            "roominfo.rno=reserve.rno && reserve.checked=1")
+////    @Select("SELECT roominfo.`rno`,`rtype`")
+//    List<RoominfoDto> getRoomInfo(@PathVariable Page<RoominfoDto> page);
 
 //    管理员查看所有用户入住信息
     @Select("SELECT roominfo.`rno`,`rtype`,`rprice`,reserve.`r_in_date`,`day_num`,reserve.`uid`,reserve.`id`,`name` FROM roominfo," +
