@@ -4,7 +4,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-@Configuration
+//@Configuration
 public class WebMvcConfig implements WebMvcConfigurer {
 
     @Override
@@ -20,5 +20,14 @@ public class WebMvcConfig implements WebMvcConfigurer {
                 .allowedMethods("*")
                 //跨域允许时间
                 .maxAge(3600);
+
+//        registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
+//
+//        registry.addResourceHandler("swagger-ui.html")
+//                .addResourceLocations("classpath:/META-INF/resources/");
+//
+//        registry.addResourceHandler("/webjars/**")
+//                .addResourceLocations("classpath:/META-INF/resources/webjars/");
+
     }
 }

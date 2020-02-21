@@ -1,9 +1,12 @@
 package com.zjnu.dormitory.dormitory.service;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.zjnu.dormitory.dormitory.dto.CacheUser;
 import com.zjnu.dormitory.dormitory.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.zjnu.dormitory.dormitory.form.QueryUser;
+
+import java.util.Set;
 
 /**
  * <p>
@@ -20,4 +23,11 @@ public interface UserService extends IService<User> {
     User selectUser(String uid, String oldPw,String name);
 
 
+    Set<String> findRolesByUsername(String username);
+
+    Set<String> findPermissionsByUsername(String username);
+
+    User findByUserName(String username);
+
+    CacheUser login(String userName, String password);
 }
