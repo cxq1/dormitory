@@ -3,18 +3,22 @@ package com.zjnu.dormitory.dormitory.controller;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.google.code.kaptcha.impl.DefaultKaptcha;
 import com.zjnu.dormitory.dormitory.common.R;
+import com.zjnu.dormitory.dormitory.dto.CacheUser;
 import com.zjnu.dormitory.dormitory.dto.UserDto;
 import com.zjnu.dormitory.dormitory.entity.User;
 import com.zjnu.dormitory.dormitory.service.UserService;
 
 import com.zjnu.dormitory.dormitory.utils.PasswordUtil;
+import com.zjnu.dormitory.dormitory.utils.ShiroMd5Util;
 import com.zjnu.dormitory.dormitory.utils.VerifyCodeUtils;
 import io.swagger.annotations.ApiOperation;
 import jdk.nashorn.internal.runtime.logging.Logger;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
@@ -26,6 +30,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @RestController
 @CrossOrigin
+@Slf4j
 public class LoginController {
     @Autowired
     UserService userService;
@@ -108,37 +113,80 @@ public class LoginController {
     }
 
     @PostMapping("/login")
-    public R login(UserDto userDTO,
-                        HttpServletRequest request,
-                        Integer rememberme){
-//        log.info("user:{}",userDTO);
-        if((userDTO.getUserName()!=null&&!"".equals(userDTO.getUserName()))&&(userDTO.getPassword()!=null&&!"".equals(userDTO.getPassword()))){
-            String newPassword= PasswordUtil.encodePwd(userDTO.getPassword());
-            UsernamePasswordToken token = new UsernamePasswordToken(userDTO.getUserName(),newPassword);
-            Subject subject = SecurityUtils.getSubject();
-            String user= (String) subject.getPrincipal();
-            if(rememberme!=null&&rememberme==1){
-                token.setRememberMe(true);
+    @ApiOperation(value = "用户登录shiro")
+    public R login(@RequestBody UserDto userDto,HttpServletRequest request) {
+        log.warn("进入登录.....");
+        System.out.println(userDto);
+        String userName = userDto.getUserName();
+        String password = userDto.getPassword();
+        String cliCode = userDto.getVerifyCode();
 
-            }
-            try {
-                subject.login(token);
-
-                request.getSession().setAttribute("user",userDTO.getUserName());
-                return R.ok().data("use",user);
-            }catch (Exception e){
-//                log.error("msg{}",e.getMessage()+"用户名或密码错误");
-//                model.addAttribute("msg","用户名或密码错误");
-                return R.error().message("用户名或密码错误");
-
-            }
-        }else {
-//            model.addAttribute("msg","用户名或密码不能为空");
-            return R.error().message("用户名或密码不能为空");
+        if (StringUtils.isEmpty(userName)) {
+            return R.error().message("用户名为空！");
         }
 
+        if (StringUtils.isEmpty(password)) {
+            return R.error().message("密码为空！");
+        }
+        if(StringUtils.isEmpty(cliCode)){
+            return R.error().message("验证码为空");
+        }
+        String serValidateCode = request.getSession().getAttribute(LOGIN_VALIDATE_CODE).toString();
+        System.out.println(request.getSession().getId());
+        CacheUser loginUser=null;
+        if(serValidateCode.equalsIgnoreCase(cliCode)){
+            loginUser = userService.login(userName, password);
+        }else{
+            return R.error().message("验证码不正确");
+        }
+        // 登录成功返回用户信息
+        return R.ok().data("token",loginUser.getToken());
+    }
 
+    @RequestMapping("addUser")
+    @ResponseBody
+    @ApiOperation("用户注册")
+    public R addUser(User user,HttpServletRequest request){
+        System.out.println("======addUser=======");
+        System.out.println(user.toString());
+
+        //密码加密并set
+        user.setPassword(ShiroMd5Util.SysMd5(user));
+
+        boolean addUser_bl = userService.save(user);//将用户数据插入数据库
+        if (addUser_bl) {
+            return R.ok().message("注册成功!");
+
+        }else{
+
+           return R.error().message("注册失败!");
+        }
 
     }
 
+    /**
+     * 未登录，shiro应重定向到登录界面，此处返回未登录状态信息由前端控制跳转页面
+     * <br/>
+     * create by: leigq
+     * <br/>
+     * create time: 2019/7/3 14:53
+     * @return
+     */
+    @RequestMapping("/un_auth")
+    public R unAuth() {
+        return R.error().message("用户未登录！");
+    }
+
+    /**
+     * 未授权，无权限，此处返回未授权状态信息由前端控制跳转页面
+     * <br/>
+     * create by: leigq
+     * <br/>
+     * create time: 2019/7/3 14:53
+     * @return
+     */
+    @RequestMapping("/unauthorized")
+    public R unauthorized() {
+        return R.error().message( "用户无权限！");
+    }
 }

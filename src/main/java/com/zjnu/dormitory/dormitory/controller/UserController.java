@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import java.util.List;
 
@@ -102,7 +103,8 @@ public class UserController {
                          @RequestParam(name = "name",required = false)String name,
                          @RequestParam(name = "roleName",required = false)String roleName,
                          @RequestParam(name = "number",required = false)String number,
-                         @RequestParam(name = "mail",required = false)String mail){
+                         @RequestParam(name = "mail",required = false)String mail,
+                         HttpServletRequest request){
         QueryUser queryUser= new QueryUser();
         /**
          * 创建搜索条件如果参数存在
@@ -119,7 +121,7 @@ public class UserController {
         if(!StringUtils.isEmpty(mail)){
             queryUser.setMail(mail);
         }
-        System.out.println(queryUser);
+        System.out.println(request.getSession().getId());
         Page<User>userPage=new Page<>(page,limit);
         userService.pageList(userPage,queryUser);
         List<User> userList = userPage.getRecords();
