@@ -1,5 +1,7 @@
 package com.zjnu.dormitory.dormitory.service;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.zjnu.dormitory.dormitory.dto.query.QueryRoom;
 import com.zjnu.dormitory.dormitory.entity.Roominfo;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -13,4 +15,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface RoominfoService extends IService<Roominfo> {
 
+
+    void pageListCondition(Page<Roominfo> pageRoomInfo, QueryRoom queryRoom);
 }
