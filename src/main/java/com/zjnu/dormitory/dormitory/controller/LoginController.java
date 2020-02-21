@@ -43,73 +43,9 @@ public class LoginController {
         VerifyCodeUtils.validateCode(request,response,captchaProducer,LOGIN_VALIDATE_CODE);
     }
 
-    @ApiOperation(value = "管理员登录")
-    @PostMapping("admin/login1")
-    public R adminLogin(HttpServletRequest request,HttpServletResponse response,
-                   @RequestBody UserDto userDto){
-//        response.addHeader("Access-Control-Allow-Origin", "http://localhost:8088");
-        String userName=userDto.getUserName();
-        String password=userDto.getPassword();
-        String verifyCode=userDto.getVerifyCode();
-        if(!StringUtils.isEmpty(userName) && !StringUtils.isEmpty(password)){
 
 
-            String serValidateCode = request.getSession().getAttribute(LOGIN_VALIDATE_CODE).toString();
-            QueryWrapper<User> wrapper=new QueryWrapper<>();
-            wrapper.eq("username",userName);
-            User one = userService.getOne(wrapper);
-            if(one.getPassword().equals(password)){
-                if(serValidateCode.equalsIgnoreCase(verifyCode)){
-                    if("admin".equals(one.getRoleName())) {
-                        request.getSession().setAttribute("admin", one);
-                        return R.ok();
-                    }
-                    else
-                        return R.error().message("没有管理员权限!");
-                }
-                else return R.error().message("验证码错误!");
-            }
-            else {
-                return R.error().message("账号或密码错误！");
-            }
-        }else {
-            return R.error().message("账号或密码错误！");
 
-        }
-    }
-
-    @ApiOperation(value = "用户登录")
-    @PostMapping("user/login")
-    public R userLogin(HttpServletRequest request, HttpServletResponse response,
-                       @RequestBody UserDto userDto, HttpSession session){
-//        response.addHeader("Access-Control-Allow-Origin", "http://localhost:8088");
-        String userName=userDto.getUserName();
-        String password=userDto.getPassword();
-        String verifyCode=userDto.getVerifyCode();
-        if(!StringUtils.isEmpty(userName) && !StringUtils.isEmpty(password)){
-
-            String serValidateCode = request.getSession().getAttribute(LOGIN_VALIDATE_CODE).toString();
-            QueryWrapper<User> wrapper=new QueryWrapper<>();
-            wrapper.eq("username",userName);
-            User one = userService.getOne(wrapper);
-            if(one.getPassword().equals(password)){
-                if(serValidateCode.equalsIgnoreCase(verifyCode)){
-                    request.getSession().setAttribute("user",one);
-                    User user = (User) request.getSession().getAttribute("user");
-//                    System.out.println(session.getId());
-//                    System.out.println("***********************************************");
-                    return R.ok();
-                }
-                else return R.error().message("验证码错误!");
-            }
-            else {
-                return R.error().message("账号或密码错误！1");
-            }
-        }else {
-            return R.error().message("账号或密码错误！2");
-
-        }
-    }
 
 
 
