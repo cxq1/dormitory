@@ -68,6 +68,7 @@ public class ShiroConfig {
          * */
 //        filterChainDefinitionMap.put("/**","custom");
         filterChainDefinitionMap.put("/registValidateCode", "anon");
+        filterChainDefinitionMap.put("/addUser", "anon");
         filterChainDefinitionMap.put("/swagger-ui.html", "anon");
         filterChainDefinitionMap.put("/swagger-resources/**", "anon");
         filterChainDefinitionMap.put("/v2/api-docs", "anon");

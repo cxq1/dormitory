@@ -63,19 +63,19 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         String number = queryUser.getNumber();
 
         if(!StringUtils.isEmpty(username)){
-            queryWrapper.eq("username",username);
+            queryWrapper.like("username",username);
         }
         if(!StringUtils.isEmpty(mail)){
             queryWrapper.eq("mail",mail);
         }
         if(!StringUtils.isEmpty(name)){
-            queryWrapper.eq("name",name);
+            queryWrapper.like("name",name);
         }
         if(!StringUtils.isEmpty(roleName)){
             queryWrapper.eq("role_name",roleName);
         }
         if(!StringUtils.isEmpty(number)){
-            queryWrapper.eq("number",number);
+            queryWrapper.like("number",number);
         }
 
         baseMapper.selectPage(userPage,queryWrapper);

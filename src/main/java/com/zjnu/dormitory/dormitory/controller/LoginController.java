@@ -51,7 +51,7 @@ public class LoginController {
         VerifyCodeUtils.validateCode(request,response,captchaProducer,LOGIN_VALIDATE_CODE);
     }
 
-    @ApiOperation(value = "管理员登录")
+    @ApiOperation(value = "管理员登录---废弃")
     @PostMapping("admin/login1")
     public R adminLogin(HttpServletRequest request,HttpServletResponse response,
                    @RequestBody UserDto userDto){
@@ -86,7 +86,7 @@ public class LoginController {
         }
     }
 
-    @ApiOperation(value = "用户登录")
+    @ApiOperation(value = "用户登录--废弃")
     @PostMapping("user/login")
     public R userLogin(HttpServletRequest request,HttpServletResponse response,
                    @RequestBody UserDto userDto){
