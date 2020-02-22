@@ -10,6 +10,9 @@ public class MdPw {
     private String uid;
     @NotEmpty(message = "name...")
     private String name;
+    @NotEmpty(message = "username")
+    private String username;
+
     @NotEmpty(message = "odlpw")
     private String oldPwd;
     @NotEmpty(message = "newpp")

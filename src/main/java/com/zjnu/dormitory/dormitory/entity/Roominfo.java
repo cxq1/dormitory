@@ -1,7 +1,10 @@
 package com.zjnu.dormitory.dormitory.entity;
 
+import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.IdType;
 import java.util.Date;
+
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
 import io.swagger.annotations.ApiModel;
@@ -46,9 +49,11 @@ public class Roominfo implements Serializable {
     private String rprice;
 
     @ApiModelProperty(value = "修改时间")
+    @TableField(fill = FieldFill.INSERT)
     private Date gmtCreateTime;
 
     @ApiModelProperty(value = "创建时间")
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date gmtModifyTime;
 
 

@@ -65,5 +65,11 @@ public class User implements Serializable {
     @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date gmtModifyTime;
 
+    public User(String password, String username) {
+        this.password = password;
+        this.username = username;
+    }
 
+    public User() {
+    }
 }
