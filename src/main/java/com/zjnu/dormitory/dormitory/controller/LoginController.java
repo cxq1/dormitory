@@ -43,10 +43,6 @@ public class LoginController {
         VerifyCodeUtils.validateCode(request,response,captchaProducer,LOGIN_VALIDATE_CODE);
     }
 
-
-
-
-
-
+    
 
 }
