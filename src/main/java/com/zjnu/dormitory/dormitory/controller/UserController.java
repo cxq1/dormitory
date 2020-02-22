@@ -48,7 +48,7 @@ public class UserController {
             String username =mdPw.getUsername();
             User temp =new User(username,oldPw);
             String encodePw = ShiroMd5Util.SysMd5(temp);
-            System.out.println(encodePw);
+
             User user= userService.selectUser(uid,encodePw,name);
             if(user!=null){
 
@@ -86,7 +86,7 @@ public class UserController {
     @ApiOperation(value = "更新用户")
     @PostMapping("update")
     public R updateUser(@RequestBody @Valid User user, BindingResult bindingResult){
-        System.out.println(user);
+
         if(bindingResult.hasErrors()){
             return R.error().message(bindingResult.getFieldError().getDefaultMessage());
         }else {
@@ -131,7 +131,7 @@ public class UserController {
             queryUser.setMail(mail);
         }
         User user = (User) SecurityUtils.getSubject().getPrincipal();
-        System.out.println(user.getUsername());
+
         Page<User>userPage=new Page<>(page,limit);
         userService.pageList(userPage,queryUser);
         List<User> userList = userPage.getRecords();

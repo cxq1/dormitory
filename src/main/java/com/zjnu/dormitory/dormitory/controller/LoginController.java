@@ -23,6 +23,8 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -122,7 +124,7 @@ public class LoginController {
     @ApiOperation(value = "用户登录shiro")
     public R login(@RequestBody UserDto userDto,HttpServletRequest request) {
         log.warn("进入登录.....");
-        System.out.println(userDto);
+
         String userName = userDto.getUserName();
         String password = userDto.getPassword();
         String cliCode = userDto.getVerifyCode();
@@ -138,7 +140,7 @@ public class LoginController {
             return R.error().message("验证码为空");
         }
         String serValidateCode = request.getSession().getAttribute(LOGIN_VALIDATE_CODE).toString();
-        System.out.println(request.getSession().getId());
+        System.out.println("sessionID:"+request.getSession().getId());
         CacheUser loginUser=null;
         if(serValidateCode.equalsIgnoreCase(cliCode)){
             loginUser = userService.login(userName, password);
@@ -154,7 +156,7 @@ public class LoginController {
     @ApiOperation("用户注册--用户权限")
     public R addUser(User user,HttpServletRequest request){
         System.out.println("======addUser=======");
-        System.out.println(user.toString());
+
         user.setRoleName("ptuser");
         //密码加密并set
         user.setPassword(ShiroMd5Util.SysMd5(user));
@@ -180,7 +182,7 @@ public class LoginController {
      */
     @RequestMapping("/un_auth")
     public R unAuth() {
-        return R.error().message("用户未登录！");
+        return R.error().message("用户未登录！").data("unauth",true);
     }
 
     /**
@@ -193,6 +195,13 @@ public class LoginController {
      */
     @RequestMapping("/unauthorized")
     public R unauthorized() {
-        return R.error().message( "用户无权限！");
+        return R.error().message( "用户无权限！").data("unauth",true);
+    }
+    @PostMapping("/logout")
+    public R logout(ServletRequest request, ServletResponse response) {
+        //登出清除缓存
+        Subject currentUser = SecurityUtils.getSubject();
+        currentUser.logout();
+        return R.ok().message( "用户无权限！").data("unauth",true);
     }
 }
