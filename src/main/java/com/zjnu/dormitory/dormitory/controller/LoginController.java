@@ -144,16 +144,16 @@ public class LoginController {
             return R.error().message("验证码不正确");
         }
         // 登录成功返回用户信息
-        return R.ok().data("token",loginUser.getToken());
+        return R.ok().data("token",loginUser.getToken()).message("登录成功");
     }
 
     @RequestMapping("addUser")
     @ResponseBody
-    @ApiOperation("用户注册")
+    @ApiOperation("用户注册--用户权限")
     public R addUser(User user,HttpServletRequest request){
         System.out.println("======addUser=======");
         System.out.println(user.toString());
-
+        user.setRoleName("ptuser");
         //密码加密并set
         user.setPassword(ShiroMd5Util.SysMd5(user));
 

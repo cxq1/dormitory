@@ -7,9 +7,11 @@ import com.zjnu.dormitory.dormitory.entity.User;
 import com.zjnu.dormitory.dormitory.form.MdPw;
 import com.zjnu.dormitory.dormitory.form.QueryUser;
 import com.zjnu.dormitory.dormitory.service.UserService;
+import com.zjnu.dormitory.dormitory.utils.ShiroMd5Util;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.shiro.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
@@ -43,9 +45,15 @@ public class UserController {
             String oldPw=mdPw.getOldPwd();
             String uid = mdPw.getUid();
             String name = mdPw.getName();
-            User user= userService.selectUser(uid,oldPw,name);
+            String username =mdPw.getUsername();
+            User temp =new User(username,oldPw);
+            String encodePw = ShiroMd5Util.SysMd5(temp);
+            System.out.println(encodePw);
+            User user= userService.selectUser(uid,encodePw,name);
             if(user!=null){
+
                 user.setPassword(mdPw.getNewPwd());
+                user.setPassword(ShiroMd5Util.SysMd5(user));//加密
                 boolean b = userService.updateById(user);
                 if(b){
                     return R.ok();
@@ -64,6 +72,7 @@ public class UserController {
         if(bindingResult.hasErrors()){
             return R.error().message(bindingResult.getFieldError().getDefaultMessage());
         }else {
+            user.setPassword(ShiroMd5Util.SysMd5(user));
             boolean b = userService.save(user);
             if(b){
                 return R.ok();
@@ -121,7 +130,8 @@ public class UserController {
         if(!StringUtils.isEmpty(mail)){
             queryUser.setMail(mail);
         }
-        System.out.println(request.getSession().getId());
+        User user = (User) SecurityUtils.getSubject().getPrincipal();
+        System.out.println(user.getUsername());
         Page<User>userPage=new Page<>(page,limit);
         userService.pageList(userPage,queryUser);
         List<User> userList = userPage.getRecords();
