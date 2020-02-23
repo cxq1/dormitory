@@ -205,10 +205,16 @@ public class LoginController {
         currentUser.logout();
         return R.ok().message( "用户无权限！").data("unauth",true);
     }
+    @ApiOperation(value = "检查后台登录用户角色信息")
     @PostMapping("checklogin")
     public R checkLogin(){
         PrincipalCollection principals = SecurityUtils.getSubject().getPrincipals();
         boolean b = SecurityUtils.getSubject().hasRole("admin");
-        return R.ok().data("checked",b);
+        if(b){
+            return R.ok().data("checked",b);
+        }else{
+            SecurityUtils.getSubject().logout();
+            return R.error().data("checked",b);
+        }
     }
 }
