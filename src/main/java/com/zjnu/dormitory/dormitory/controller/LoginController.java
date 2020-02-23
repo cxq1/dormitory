@@ -16,6 +16,7 @@ import jdk.nashorn.internal.runtime.logging.Logger;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -203,5 +204,11 @@ public class LoginController {
         Subject currentUser = SecurityUtils.getSubject();
         currentUser.logout();
         return R.ok().message( "用户无权限！").data("unauth",true);
+    }
+    @PostMapping("checklogin")
+    public R checkLogin(){
+        PrincipalCollection principals = SecurityUtils.getSubject().getPrincipals();
+        boolean b = SecurityUtils.getSubject().hasRole("admin");
+        return R.ok().data("checked",b);
     }
 }
