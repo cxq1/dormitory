@@ -15,7 +15,7 @@ public class RoominfoDto {
     private String uid;
 
     @ApiModelProperty(value = "入住时间")
-    private Date rinDate;
+    private Date rinData;
 
     @ApiModelProperty(value = "住的天数")
     private String  dayNum;
