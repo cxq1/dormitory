@@ -68,6 +68,7 @@ public class ShiroConfig {
          * */
 //        filterChainDefinitionMap.put("/**","custom");
         filterChainDefinitionMap.put("/registValidateCode", "anon");
+        filterChainDefinitionMap.put("/addUser", "anon");
         filterChainDefinitionMap.put("/swagger-ui.html", "anon");
         filterChainDefinitionMap.put("/swagger-resources/**", "anon");
         filterChainDefinitionMap.put("/v2/api-docs", "anon");
@@ -191,7 +192,7 @@ public class ShiroConfig {
         RedisManager redisManager = new RedisManager();
         redisManager.setHost(host);
         redisManager.setPort(port);
-        redisManager.setTimeout(60*60);
+        redisManager.setTimeout(60*20);
         redisManager.setPassword(password);
         return redisManager;
     }
