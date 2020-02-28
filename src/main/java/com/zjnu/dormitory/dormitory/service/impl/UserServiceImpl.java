@@ -3,6 +3,7 @@ package com.zjnu.dormitory.dormitory.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.sun.xml.internal.bind.v2.runtime.output.Encoded;
 import com.zjnu.dormitory.dormitory.dto.CacheUser;
 import com.zjnu.dormitory.dormitory.dto.UserDto;
 import com.zjnu.dormitory.dormitory.entity.Power;
@@ -14,6 +15,7 @@ import com.zjnu.dormitory.dormitory.mapper.UserMapper;
 import com.zjnu.dormitory.dormitory.service.RoleService;
 import com.zjnu.dormitory.dormitory.service.UserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.zjnu.dormitory.dormitory.utils.ShiroMd5Util;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.shiro.SecurityUtils;
@@ -22,14 +24,15 @@ import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
+import org.apache.tomcat.util.security.MD5Encoder;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import javax.security.auth.login.LoginException;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import javax.servlet.http.HttpSession;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -159,7 +162,5 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         Subject subject = SecurityUtils.getSubject();
         subject.logout();
     }
-
-
 
 }

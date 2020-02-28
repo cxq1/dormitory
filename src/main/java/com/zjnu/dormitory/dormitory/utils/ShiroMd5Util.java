@@ -10,7 +10,7 @@ public class ShiroMd5Util {
 
         Object crdentials =xxx.getPassword();//密码原值
 
-        ByteSource salt = ByteSource.Util.bytes(xxx.getUsername());//以账号作为盐值
+        ByteSource salt = ByteSource.Util.bytes(xxx.getName());//以姓名作为盐值
 
         int hashIterations = 1024;//加密1024次
 
@@ -18,4 +18,5 @@ public class ShiroMd5Util {
 
         return hash.toString();
     }
+
 }

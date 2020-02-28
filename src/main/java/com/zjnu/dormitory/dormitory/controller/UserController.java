@@ -42,11 +42,13 @@ public class UserController {
         if(bindingResult.hasErrors()){
             return R.error().message(bindingResult.getFieldError().getDefaultMessage());
         }else {
-            String oldPw=mdPw.getOldPwd();
+            String oldPw = mdPw.getOldPwd();
             String uid = mdPw.getUid();
             String name = mdPw.getName();
             String username =mdPw.getUsername();
-            User temp =new User(username,oldPw);
+            System.out.println(oldPw+"**********************************");
+            //盐值修改为name
+            User temp =new User(oldPw,name);
             String encodePw = ShiroMd5Util.SysMd5(temp);
 
             User user= userService.selectUser(uid,encodePw,name);
