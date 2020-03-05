@@ -34,9 +34,9 @@ public class RoominfoServiceImpl extends ServiceImpl<RoominfoMapper, Roominfo> i
     }
 
 
-    public void pageListCondition(Page<Roominfo> pageRoomInfo, QueryRoom queryRoom) {
+    public void pageListCondition(Page<Roominfo> roomPage, QueryRoom queryRoom) {
         if(queryRoom==null){
-            baseMapper.selectPage(pageRoomInfo,null);
+            baseMapper.selectPage(roomPage,null);
             return;
         }
         String rno = queryRoom.getRno();
@@ -46,17 +46,17 @@ public class RoominfoServiceImpl extends ServiceImpl<RoominfoMapper, Roominfo> i
         QueryWrapper<Roominfo> wrapper=new QueryWrapper<>();
 
         if(!StringUtils.isEmpty(rno)){
-            wrapper.eq("rno",rno);
+            wrapper.like("rno",rno);
         }
         if(!StringUtils.isEmpty(rprice)){
-            wrapper.eq("rprice",rprice);
+            wrapper.like("rprice",rprice);
         }
         if(!StringUtils.isEmpty(rstaus)){
-            wrapper.eq("rstatus",rstaus);
+            wrapper.like("rstatus",rstaus);
         }
         if(!StringUtils.isEmpty(rtype)){
-            wrapper.eq("rtypr",rtype);
+            wrapper.like("rtype",rtype);
         }
-        baseMapper.selectPage(pageRoomInfo,wrapper);
+        baseMapper.selectPage(roomPage,wrapper);
     }
 }
