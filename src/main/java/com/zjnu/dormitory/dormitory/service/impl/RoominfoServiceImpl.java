@@ -5,9 +5,11 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.zjnu.dormitory.dormitory.dto.RoominfoDto;
 import com.zjnu.dormitory.dormitory.dto.query.QueryRoom;
 import com.zjnu.dormitory.dormitory.entity.Roominfo;
+import com.zjnu.dormitory.dormitory.entity.User;
 import com.zjnu.dormitory.dormitory.mapper.RoominfoMapper;
 import com.zjnu.dormitory.dormitory.service.RoominfoService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.apache.shiro.SecurityUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
@@ -35,15 +37,20 @@ public class RoominfoServiceImpl extends ServiceImpl<RoominfoMapper, Roominfo> i
 
 
     public void pageListCondition(Page<Roominfo> roomPage, QueryRoom queryRoom) {
+        QueryWrapper<Roominfo> wrapper=new QueryWrapper<>();
         if(queryRoom==null){
             baseMapper.selectPage(roomPage,null);
             return;
         }
+
         String rno = queryRoom.getRno();
         String rprice = queryRoom.getRprice();
         String rstaus = queryRoom.getRstaus();
         String rtype = queryRoom.getRtype();
-        QueryWrapper<Roominfo> wrapper=new QueryWrapper<>();
+        User user=(User) SecurityUtils.getSubject().getPrincipal();
+        if(!user.getRoleName().equals("admin")){
+            wrapper.eq("logic_delete","0");
+        }
 
         if(!StringUtils.isEmpty(rno)){
             wrapper.like("rno",rno);
