@@ -42,11 +42,13 @@ public class UserController {
         if(bindingResult.hasErrors()){
             return R.error().message(bindingResult.getFieldError().getDefaultMessage());
         }else {
-            String oldPw=mdPw.getOldPwd();
+            String oldPw = mdPw.getOldPwd();
             String uid = mdPw.getUid();
             String name = mdPw.getName();
             String username =mdPw.getUsername();
-            User temp =new User(username,oldPw);
+            System.out.println(oldPw+"**********************************");
+            //盐值修改为name
+            User temp =new User(oldPw,name);
             String encodePw = ShiroMd5Util.SysMd5(temp);
 
             User user= userService.selectUser(uid,encodePw,name);
@@ -109,28 +111,7 @@ public class UserController {
     @RequestMapping("list")
     public R getUserList(@RequestParam(name = "limit",defaultValue = "10")Integer limit,
                          @RequestParam(value = "page",defaultValue = "1")Integer page,
-                         @RequestParam(name = "name",required = false)String name,
-                         @RequestParam(name = "roleName",required = false)String roleName,
-                         @RequestParam(name = "number",required = false)String number,
-                         @RequestParam(name = "mail",required = false)String mail,
-                         HttpServletRequest request){
-        QueryUser queryUser= new QueryUser();
-        /**
-         * 创建搜索条件如果参数存在
-         */
-        if(!StringUtils.isEmpty(name)){
-            queryUser.setName(name);
-        }
-        if(!StringUtils.isEmpty(roleName)){
-            queryUser.setRoleName(roleName);
-        }
-        if(!StringUtils.isEmpty(number)){
-            queryUser.setNumber(number);
-        }
-        if(!StringUtils.isEmpty(mail)){
-            queryUser.setMail(mail);
-        }
-        User user = (User) SecurityUtils.getSubject().getPrincipal();
+                         QueryUser queryUser){
 
         Page<User>userPage=new Page<>(page,limit);
         userService.pageList(userPage,queryUser);

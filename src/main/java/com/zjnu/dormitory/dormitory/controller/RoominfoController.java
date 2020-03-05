@@ -121,18 +121,21 @@ public class RoominfoController {
                   HttpSession session){
 
 //        User user = (User) request.getSession().getAttribute("user");
-//        System.out.println(session.getId());
-//        System.out.println("***********************************************");
+        //获取用户
+        User user = (User) SecurityUtils.getSubject().getPrincipal();
+
         Page<RoominfoDto> roominfoDtoPage = new Page<>(page,limit);
         roominfoService.getAllRoomInfo(roominfoDtoPage);
         List<RoominfoDto> roominfoDtoList = roominfoDtoPage.getRecords();
 
         List temps = new ArrayList();
         for(RoominfoDto roominfod:roominfoDtoList){
-            int day = Integer.parseInt(roominfod.getDayNum());
-            int price = Integer.parseInt(roominfod.getRprice());
-            roominfod.setSum(day*price);
-            temps.add(roominfod);
+            if (roominfod.getUid().equals(user.getUid())){
+                int day = Integer.parseInt(roominfod.getDayNum());
+                int price = Integer.parseInt(roominfod.getRprice());
+                roominfod.setSum(day*price);
+                temps.add(roominfod);
+            }
         }
         return R.ok().data("data",temps).data("count",temps.size());
     }

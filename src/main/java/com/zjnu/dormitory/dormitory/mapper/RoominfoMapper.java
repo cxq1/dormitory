@@ -29,7 +29,8 @@ public interface RoominfoMapper extends BaseMapper<Roominfo> {
 //    List<RoominfoDto> getRoomInfo(@PathVariable Page<RoominfoDto> page);
 
 //    管理员查看所有用户入住信息
-    @Select("SELECT roominfo.`rno`,`rtype`,`rprice`,reserve.`r_in_date`,`day_num`,reserve.`uid`,reserve.`id`,`name` FROM roominfo," +
+    @Select("SELECT roominfo.`rno`,`rtype`,`rprice`,reserve.`r_in_data`,`day_num`,reserve.`uid`,reserve.`id`,`name` " +
+            "FROM roominfo," +
             "reserve " +
             " WHERE " +
             "roominfo.rno=reserve.rno && reserve.checked=1")

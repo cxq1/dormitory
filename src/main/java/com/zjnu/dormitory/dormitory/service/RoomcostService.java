@@ -1,5 +1,6 @@
 package com.zjnu.dormitory.dormitory.service;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
@@ -19,4 +20,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
 public interface RoomcostService extends IService<Roomcost> {
 //    IPage<Roomcost> pageList(Page<Roomcost> roomcostPage, QueryWrapper queryWrapper);
 //    Page<RoomcostDto> getRoomCost(Page<RoomcostDto> page);
+
 }
