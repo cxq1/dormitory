@@ -14,11 +14,16 @@ public class MyObjectMetaHandler implements MetaObjectHandler {
         this.setFieldValByName("gmtCreatedTime",new Date(),metaObject);
         this.setFieldValByName("gmtModifyTime",new Date(),metaObject);
         this.setFieldValByName("gmtCreateTime",new Date(),metaObject);
+
+        this.setFieldValByName("orderDate",new Date(),metaObject);
+
         this.setFieldValByName("logicDelete", 0,metaObject);
+
     }
 
     @Override
     public void updateFill(MetaObject metaObject) {
         this.setFieldValByName("gmtModifyTime",new Date(),metaObject);
     }
+
 }

@@ -1,7 +1,10 @@
 package com.zjnu.dormitory.dormitory.entity;
 
+import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.IdType;
 import java.util.Date;
+
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
 import io.swagger.annotations.ApiModel;
@@ -34,11 +37,12 @@ public class Reserve implements Serializable {
     @ApiModelProperty(value = "房间号")
     private String rno;
 
+    @TableField(fill = FieldFill.INSERT)
     @ApiModelProperty(value = "预订日期")
     private Date orderDate;
 
     @ApiModelProperty(value = "入住时间")
-    private Date rInData;
+    private Date rInDate;
 
     @ApiModelProperty(value = "预定天数")
     private Integer dayNum;
@@ -51,10 +55,11 @@ public class Reserve implements Serializable {
     @ApiModelProperty(value = "是否审核 0代表以审核通过1代表未审核")
     private String checked;
 
+    @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date gmtModifyTime;
 
+    @TableField(fill = FieldFill.INSERT)
     @ApiModelProperty(value = "预订时间,创建时间")
     private Date gmtCreatedTime;
-
 
 }

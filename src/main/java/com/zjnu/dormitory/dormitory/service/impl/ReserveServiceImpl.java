@@ -2,7 +2,10 @@ package com.zjnu.dormitory.dormitory.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.zjnu.dormitory.dormitory.dto.apply.ApplyRoomDto;
 import com.zjnu.dormitory.dormitory.entity.Reserve;
+import com.zjnu.dormitory.dormitory.entity.Roominfo;
+import com.zjnu.dormitory.dormitory.entity.User;
 import com.zjnu.dormitory.dormitory.form.QueryReserve;
 import com.zjnu.dormitory.dormitory.mapper.ReserveMapper;
 import com.zjnu.dormitory.dormitory.service.ReserveService;
@@ -42,5 +45,26 @@ public class ReserveServiceImpl extends ServiceImpl<ReserveMapper, Reserve> impl
         }
 
         baseMapper.selectPage(reservePage,queryWrapper);
+    }
+
+
+    @Override
+    public Reserve acquireReserve(User user, ApplyRoomDto applyRoomDto, Roominfo roominfo) {
+        String uid = user.getUid();
+        String name = user.getName();
+
+        Reserve reserve = new Reserve();
+
+        reserve.setUid(uid);
+        reserve.setName(name);
+
+        String rno = roominfo.getRno();
+        reserve.setRno(rno);
+
+        reserve.setNote(applyRoomDto.getRemarks());
+        reserve.setReason(applyRoomDto.getReason());
+        reserve.setDayNum(Integer.valueOf(applyRoomDto.getDay()));
+        reserve.setRInDate(applyRoomDto.getRInDate());
+        return reserve;
     }
 }
