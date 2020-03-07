@@ -40,7 +40,7 @@ public class Roominfo implements Serializable {
     @ApiModelProperty(value = "房间位置")
     private String rposition;
 
-    @ApiModelProperty(value = "房间状态")
+    @ApiModelProperty(value = "房间状态,0代表空")
     private String rstatus;
 
     @ApiModelProperty(value = "房间备注")

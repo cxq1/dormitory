@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.annotations.ApiModelProperty;
 import io.swagger.models.auth.In;
 import lombok.Data;
+import org.apache.ibatis.annotations.ResultMap;
 
 import java.util.Date;
 
@@ -15,7 +16,7 @@ public class RoominfoDto {
     private String uid;
 
     @ApiModelProperty(value = "入住时间")
-    private Date rinData;
+    private Date rinDate;
 
     @ApiModelProperty(value = "住的天数")
     private String  dayNum;

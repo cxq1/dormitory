@@ -4,23 +4,30 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.zjnu.dormitory.dormitory.common.R;
 import com.zjnu.dormitory.dormitory.dto.RoominfoDto;
+import com.zjnu.dormitory.dormitory.dto.apply.ApplyRoomDto;
 import com.zjnu.dormitory.dormitory.entity.Power;
+import com.zjnu.dormitory.dormitory.entity.Reserve;
 import com.zjnu.dormitory.dormitory.entity.Roominfo;
 import com.zjnu.dormitory.dormitory.entity.User;
 import com.zjnu.dormitory.dormitory.service.ReserveService;
 import com.zjnu.dormitory.dormitory.service.RoominfoService;
 import com.zjnu.dormitory.dormitory.service.UserService;
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiModelProperty;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.models.auth.In;
 import org.apache.ibatis.annotations.Param;
 import org.apache.shiro.SecurityUtils;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import com.zjnu.dormitory.dormitory.dto.query.QueryRoom;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.validation.Valid;
 import java.security.Principal;
 import java.util.ArrayList;
 import java.util.List;
@@ -162,5 +169,37 @@ public class RoominfoController {
         boolean b = roominfoService.removeById(id);
         return b;
     }
+
+    @ApiOperation(value = "查找空房间并申请")
+    @PostMapping("apply")
+    public R roomEmpty(@RequestBody @Valid ApplyRoomDto applyRoomDto, BindingResult bindingResult){
+        if(bindingResult.hasErrors()){
+            return R.error().message(bindingResult.getFieldError().getDefaultMessage());
+        }else {
+            //获取空房间数量
+            Integer count = roominfoService.selectEmtRoomCount(applyRoomDto);
+            if (count == 0){
+                return R.ok().data("data","抱歉，暂时没有空房间").data("count","0");
+            }else {
+                //获取空房间
+                Roominfo roominfo = roominfoService.selectEmptyRoom(applyRoomDto);
+
+                User user = (User) SecurityUtils.getSubject().getPrincipal();
+
+                //将信息填入reserve
+                Reserve reserve = reserveService.acquireReserve(user,applyRoomDto,roominfo);
+
+                reserveService.save(reserve);
+
+                //将被预定的房间设置为非空；
+                roominfo.setRstatus("1");
+                roominfoService.updateById(roominfo);
+
+                return R.ok().data("data",reserve).data("count","1");
+            }
+
+        }
+    }
+
 }
 

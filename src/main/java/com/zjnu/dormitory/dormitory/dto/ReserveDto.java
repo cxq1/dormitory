@@ -24,7 +24,7 @@ public class ReserveDto {
     private Date orderDate;
 
     @ApiModelProperty(value = "入住时间")
-    private Date rInData;
+    private Date rInDate;
 
     @ApiModelProperty(value = "预定天数")
     private Integer dayNum;
