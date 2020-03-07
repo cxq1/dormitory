@@ -7,10 +7,15 @@ import com.zjnu.dormitory.dormitory.dto.apply.ApplyRoomDto;
 import com.zjnu.dormitory.dormitory.dto.query.QueryRoom;
 import com.zjnu.dormitory.dormitory.entity.Reserve;
 import com.zjnu.dormitory.dormitory.entity.Roominfo;
+import com.zjnu.dormitory.dormitory.entity.User;
 import com.zjnu.dormitory.dormitory.mapper.RoominfoMapper;
 import com.zjnu.dormitory.dormitory.service.RoominfoService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+//<<<<<<< master
 import io.swagger.models.auth.In;
+//=======
+import org.apache.shiro.SecurityUtils;
+//>>>>>>> master
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
@@ -35,30 +40,35 @@ public class RoominfoServiceImpl extends ServiceImpl<RoominfoMapper, Roominfo> i
     }
 
 
-    public void pageListCondition(Page<Roominfo> pageRoomInfo, QueryRoom queryRoom) {
+    public void pageListCondition(Page<Roominfo> roomPage, QueryRoom queryRoom) {
+        QueryWrapper<Roominfo> wrapper=new QueryWrapper<>();
         if(queryRoom==null){
-            baseMapper.selectPage(pageRoomInfo,null);
+            baseMapper.selectPage(roomPage,null);
             return;
         }
+
         String rno = queryRoom.getRno();
         String rprice = queryRoom.getRprice();
         String rstaus = queryRoom.getRstaus();
         String rtype = queryRoom.getRtype();
-        QueryWrapper<Roominfo> wrapper=new QueryWrapper<>();
+        User user=(User) SecurityUtils.getSubject().getPrincipal();
+        if(!user.getRoleName().equals("admin")){
+            wrapper.eq("logic_delete","0");
+        }
 
         if(!StringUtils.isEmpty(rno)){
-            wrapper.eq("rno",rno);
+            wrapper.like("rno",rno);
         }
         if(!StringUtils.isEmpty(rprice)){
-            wrapper.eq("rprice",rprice);
+            wrapper.like("rprice",rprice);
         }
         if(!StringUtils.isEmpty(rstaus)){
-            wrapper.eq("rstatus",rstaus);
+            wrapper.like("rstatus",rstaus);
         }
         if(!StringUtils.isEmpty(rtype)){
-            wrapper.eq("rtypr",rtype);
+            wrapper.like("rtype",rtype);
         }
-        baseMapper.selectPage(pageRoomInfo,wrapper);
+        baseMapper.selectPage(roomPage,wrapper);
     }
 
 

@@ -20,8 +20,12 @@ import org.apache.ibatis.annotations.Param;
 import org.apache.shiro.SecurityUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.validation.BindingResult;
+
+import org.springframework.util.StringUtils;
+
 import org.springframework.web.bind.annotation.*;
 import com.zjnu.dormitory.dormitory.dto.query.QueryRoom;
 import javax.servlet.http.HttpServletRequest;
@@ -51,31 +55,54 @@ public class RoominfoController {
 
     @PostMapping("addRoom")
     public R addRoom(@RequestBody(required = false) Roominfo roominfo){
-        boolean save = roominfoService.save(roominfo);
-        if(save){
-            return R.ok();
-        }else {
+        User user=(User) SecurityUtils.getSubject().getPrincipal();
+        String roleName = user.getRoleName();
+        if(roleName.equals("admin")){
+            boolean save = roominfoService.save(roominfo);
+            if(save){
+                return R.ok();
+            }else {
+                return R.error();
+            }
+        }else{
             return R.error();
         }
+
     }
 
     //多条件组合并且带分页
     @RequestMapping("moreConditionPageList")
     public R getMoreConditionPageList(@RequestParam(name = "limit",defaultValue = "10")Integer limit,
                                       @RequestParam(value = "page",defaultValue = "1")Integer page,
-                                      @RequestBody(required = false) QueryRoom queryRoom){
-        Page<Roominfo> pageRoomInfo=new Page<>(page,limit);
-        roominfoService.pageListCondition(pageRoomInfo,queryRoom);
-        long total = pageRoomInfo.getTotal();
-        List<Roominfo> records = pageRoomInfo.getRecords();
-        return R.ok().data("count",total).data("data",records);
+                                      @RequestParam(name = "rno",required = false)String rno,
+                                      @RequestParam(name = "rprice",required = false)String rprice,
+                                      @RequestParam(name = "rtype",required = false)String rtype,
+                                      @RequestParam(name = "rstatus",required = false)String rstatus,
+                                      HttpServletRequest request){
+        QueryRoom queryRoom = new QueryRoom();
+        if(!StringUtils.isEmpty(rtype)){
+            queryRoom.setRtype(rtype);
+        }
+        if(!StringUtils.isEmpty(rprice)){
+            queryRoom.setRprice(rprice);
+        }
+        if(!StringUtils.isEmpty(rno)){
+            queryRoom.setRno(rno);
+        }
+        if(!StringUtils.isEmpty(rstatus)){
+            queryRoom.setRstaus(rstatus);
+        }
+        Page<Roominfo> roomPage=new Page<>(page,limit);
+        roominfoService.pageListCondition(roomPage,queryRoom);
+        List<Roominfo> records = roomPage.getRecords();
+        return  R.ok().data("data",records).data("count",roomPage.getTotal());
     }
 
     //根据id查找
-    @PostMapping("queryRoom/{id}")
+    @GetMapping("queryRoom/{id}")
     public R getRoom(@PathVariable String id){
         Roominfo roominfo = roominfoService.getById(id);
-        return R.ok().data("roomInfo",roominfo);
+        return R.ok().data("data",roominfo);
     }
 
 
@@ -94,8 +121,6 @@ public class RoominfoController {
     //用户查看住房记录
     @Autowired
     UserService userService;
-    @Autowired
-    ReserveService reserveService;
     private HttpServletResponse response;
 
     @GetMapping("list")
@@ -154,7 +179,7 @@ public class RoominfoController {
     @ApiOperation(value = "管理员删除记录")
     @DeleteMapping("admin/delete/{id}")
     public R adminDeleteRoomInfo(@PathVariable String id){
-        boolean b = reserveService.removeById(id);
+        boolean b = roominfoService.removeById(id);
         if (b) {
             return R.ok();
         }else{
@@ -164,10 +189,16 @@ public class RoominfoController {
 
 
     //实现逻辑删除，管理员删除用户住房间记录
-    @DeleteMapping("deleteRoom/{id}")
-    public boolean DeleteRoomById(@PathVariable("id") String id){
-        boolean b = roominfoService.removeById(id);
-        return b;
+    @DeleteMapping("logicDelete/{id}")
+    public R DeleteRoomById(@PathVariable("id") String id){
+        Roominfo room = roominfoService.getById(id);
+        room.setLogicDelete(1);
+        boolean b = roominfoService.updateById(room);
+        if(b){
+            return R.ok();
+        }else{
+            return R.error();
+        }
     }
 
     @ApiOperation(value = "查找空房间并申请")
