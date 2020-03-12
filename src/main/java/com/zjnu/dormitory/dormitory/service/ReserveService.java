@@ -2,11 +2,15 @@ package com.zjnu.dormitory.dormitory.service;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.zjnu.dormitory.dormitory.dto.apply.ApplyRoomDto;
+import com.zjnu.dormitory.dormitory.dto.apply.SeeApplyDto;
 import com.zjnu.dormitory.dormitory.entity.Reserve;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.zjnu.dormitory.dormitory.entity.Roominfo;
 import com.zjnu.dormitory.dormitory.entity.User;
 import com.zjnu.dormitory.dormitory.form.QueryReserve;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
  * <p>
@@ -22,4 +26,6 @@ public interface ReserveService extends IService<Reserve> {
 
     //填充一个reserve信息
     Reserve acquireReserve(User user, ApplyRoomDto applyRoomDto, Roominfo roominfo);
+
+    SeeApplyDto getAll(@Param("id") String id);
 }
