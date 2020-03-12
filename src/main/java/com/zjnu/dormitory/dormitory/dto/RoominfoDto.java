@@ -2,6 +2,7 @@ package com.zjnu.dormitory.dormitory.dto;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiModelProperty;
 import io.swagger.models.auth.In;
 import lombok.Data;
@@ -34,5 +35,8 @@ public class RoominfoDto {
     private String rno;
 
     private String name;
+
+    @ApiModelProperty(value = "是否审核")
+    private String checked;
 
 }

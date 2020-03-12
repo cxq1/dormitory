@@ -3,6 +3,7 @@ package com.zjnu.dormitory.dormitory.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.zjnu.dormitory.dormitory.dto.apply.ApplyRoomDto;
+import com.zjnu.dormitory.dormitory.dto.apply.SeeApplyDto;
 import com.zjnu.dormitory.dormitory.entity.Reserve;
 import com.zjnu.dormitory.dormitory.entity.Roominfo;
 import com.zjnu.dormitory.dormitory.entity.User;
@@ -12,6 +13,8 @@ import com.zjnu.dormitory.dormitory.service.ReserveService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * <p>
@@ -66,5 +69,10 @@ public class ReserveServiceImpl extends ServiceImpl<ReserveMapper, Reserve> impl
         reserve.setDayNum(Integer.valueOf(applyRoomDto.getDay()));
         reserve.setRInDate(applyRoomDto.getRInDate());
         return reserve;
+    }
+
+    @Override
+    public SeeApplyDto getAll(String id) {
+        return baseMapper.getAll(id);
     }
 }

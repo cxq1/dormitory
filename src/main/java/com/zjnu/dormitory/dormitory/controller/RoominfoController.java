@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.zjnu.dormitory.dormitory.common.R;
 import com.zjnu.dormitory.dormitory.dto.RoominfoDto;
 import com.zjnu.dormitory.dormitory.dto.apply.ApplyRoomDto;
+import com.zjnu.dormitory.dormitory.dto.apply.SeeApplyDto;
 import com.zjnu.dormitory.dormitory.entity.Power;
 import com.zjnu.dormitory.dormitory.entity.Reserve;
 import com.zjnu.dormitory.dormitory.entity.Roominfo;
@@ -16,6 +17,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiModelProperty;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.models.auth.In;
+import net.bytebuddy.implementation.bind.annotation.BindingPriority;
 import org.apache.ibatis.annotations.Param;
 import org.apache.shiro.SecurityUtils;
 import org.springframework.beans.BeanUtils;
@@ -52,6 +54,9 @@ import java.util.List;
 public class RoominfoController {
     @Autowired
     RoominfoService roominfoService;
+
+    @Autowired
+    ReserveService reserveService;
 
     @PostMapping("addRoom")
     public R addRoom(@RequestBody(required = false) Roominfo roominfo){
@@ -150,12 +155,12 @@ public class RoominfoController {
         return R.ok().data("data",temps).data("count",temps.size());
     }
 
-//    @ApiOperation(value = "查找用户根据id")
-//    @GetMapping("{id}")
-//    public R getUserById(@PathVariable String id){
-//        User user = userService.getById(id);
-//        return R.ok().data("data",user);
-//    }
+    @ApiOperation(value = "查找房间根据id")
+    @GetMapping("{id}")
+    public R getRoominfoById(@PathVariable String id){
+        Reserve reserve = reserveService.getById(id);
+        return R.ok().data("data",reserve);
+    }
 
 
     //管理员查看所有用户住房记录
@@ -229,6 +234,51 @@ public class RoominfoController {
                 return R.ok().data("data",reserve).data("count","1");
             }
 
+        }
+    }
+
+    @ApiOperation("用户修改住宿申请的信息")
+    @PostMapping("update/roomApply")
+    public R UpdateRoomApply(@RequestBody @Valid Reserve reserve, BindingResult bindingResult){
+        if (bindingResult.hasErrors()){
+            return R.error().message(bindingResult.getFieldError().getDefaultMessage());
+        }else {
+            reserve.setChecked("1");
+            System.out.println(reserve);
+            boolean torf = reserveService.updateById(reserve);
+            if (torf){
+                return R.ok();
+            }else {
+                return R.error();
+            }
+        }
+    }
+
+    @ApiOperation(value = "查看申请信息")
+    @GetMapping("see/roominfo/{id}")
+    public R SeeRoomApply(@PathVariable String id){
+        SeeApplyDto seeApplyDto = reserveService.getAll(id);
+        String sumPrice =
+                String.valueOf(Integer.valueOf(seeApplyDto.getRprice())*Integer.valueOf(seeApplyDto.getDayNum()));
+        seeApplyDto.setSumPrice(sumPrice);
+        return R.ok().data("data",seeApplyDto);
+    }
+
+    @ApiOperation(value = "用户取消申请")
+    @DeleteMapping("delete/apply/{id}")
+    public R DeleteApply(@PathVariable String id){
+        Reserve reserve = reserveService.getById(id);
+        boolean b = reserveService.removeById(id);
+        if (b){
+            String rno = reserve.getRno();
+            QueryWrapper queryWrapper = new QueryWrapper();
+            queryWrapper.eq("rno",rno);
+            Roominfo roominfo = roominfoService.getOne(queryWrapper);
+            roominfo.setRstatus("0");
+            roominfoService.updateById(roominfo);
+            return R.ok();
+        }else {
+            return R.error();
         }
     }
 
