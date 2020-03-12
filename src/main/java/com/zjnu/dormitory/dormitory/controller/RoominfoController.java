@@ -55,6 +55,9 @@ public class RoominfoController {
     @Autowired
     RoominfoService roominfoService;
 
+    @Autowired
+    ReserveService reserveService;
+
     @PostMapping("addRoom")
     public R addRoom(@RequestBody(required = false) Roominfo roominfo){
         User user=(User) SecurityUtils.getSubject().getPrincipal();
